@@ -1,0 +1,33 @@
+.cta{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: @cta-bg;
+    color: @light-text-color;
+    border-radius: 5em;
+    padding: 1.1em 2.3em;
+    .fw-bold;
+    .font-19;
+    cursor: pointer;
+
+    @media screen and (max-width: @mobile-l) {
+        height: 40px;
+    }
+
+    svg{
+        path{
+            fill: @cta-color;
+        }
+    }
+
+    &__icon{
+        transition: 300ms @easeOutQuad;
+        flex-shrink: 0;
+    }
+    &:hover{
+        .cta__icon{
+            transform: translate3d(5px,0,0);
+            -webkit-transform: translate3d(5px,0,0);
+        }
+    }
+}

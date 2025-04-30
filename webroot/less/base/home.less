@@ -1,0 +1,31 @@
+.home{
+    &__hero{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        video{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            filter: brightness(0.65) grayscale(100%);
+        }
+
+        &__content{
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: @light-text-color;
+            width: clamp(340px, 1112vw * @px2vw, 1112px);
+
+            span{
+                display: inline-block;
+                margin-bottom: 1.05em;
+            }
+        }
+    }
+}
