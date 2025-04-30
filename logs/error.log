@@ -26618,3 +26618,85 @@ Stack Trace:
 Request URL: /cache_assets/components/custom/backgrounds
 Referer URL: http://sanacasa.test/cache_assets/main.css
 Client IP: 127.0.0.1
+2025-04-30 17:08:55 warning: Undefined variable $extraClass
+Request URL: /
+Client IP: 127.0.0.1
+Trace:
+D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1188
+Cake\View\View->_evaluate() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1145
+Cake\View\View->_render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() D:\laragon\www\sanacasa\plugins\CustomPages\templates\CustomPages\home.php, line 40
+D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1188
+Cake\View\View->_evaluate() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1145
+Cake\View\View->_render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 785
+Cake\View\View->render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\Controller.php, line 705
+Cake\Controller\Controller->render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\Controller.php, line 509
+Cake\Controller\Controller->invokeAction() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Controller\ControllerFactory->invoke() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 332
+Cake\Http\BaseApplication->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 87
+Authentication\Middleware\AuthenticationMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\src\Middleware\CachedAssetMiddleware.php, line 50
+App\Middleware\CachedAssetMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Runner->run() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Server.php, line 105
+Cake\Http\Server->run() D:\laragon\www\sanacasa\webroot\index.php, line 44
+[main]
+
+2025-04-30 17:08:55 warning: Undefined variable $extraClass
+Request URL: /
+Client IP: 127.0.0.1
+Trace:
+D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1188
+Cake\View\View->_evaluate() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1145
+Cake\View\View->_render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1689
+Cake\View\View->_renderElement() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 676
+Cake\View\View->element() D:\laragon\www\sanacasa\plugins\CustomPages\templates\CustomPages\home.php, line 46
+D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1188
+Cake\View\View->_evaluate() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 1145
+Cake\View\View->_render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\View\View.php, line 785
+Cake\View\View->render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\Controller.php, line 705
+Cake\Controller\Controller->render() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\Controller.php, line 509
+Cake\Controller\Controller->invokeAction() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 139
+Cake\Controller\ControllerFactory->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Controller\ControllerFactory.php, line 114
+Cake\Controller\ControllerFactory->invoke() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\BaseApplication.php, line 332
+Cake\Http\BaseApplication->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 86
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\authentication\src\Middleware\AuthenticationMiddleware.php, line 87
+Authentication\Middleware\AuthenticationMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php, line 169
+Cake\Http\Middleware\CsrfProtectionMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Middleware\BodyParserMiddleware.php, line 157
+Cake\Http\Middleware\BodyParserMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php, line 118
+Cake\Routing\Middleware\RoutingMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php, line 69
+Cake\Routing\Middleware\AssetMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\src\Middleware\CachedAssetMiddleware.php, line 50
+App\Middleware\CachedAssetMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\markstory\asset_compress\src\Middleware\AssetCompressMiddleware.php, line 64
+AssetCompress\Middleware\AssetCompressMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php, line 115
+Cake\Error\Middleware\ErrorHandlerMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php, line 60
+DebugKit\Middleware\DebugKitMiddleware->process() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 82
+Cake\Http\Runner->handle() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Runner.php, line 67
+Cake\Http\Runner->run() D:\laragon\www\sanacasa\vendor\cakephp\cakephp\src\Http\Server.php, line 105
+Cake\Http\Server->run() D:\laragon\www\sanacasa\webroot\index.php, line 44
+[main]
+

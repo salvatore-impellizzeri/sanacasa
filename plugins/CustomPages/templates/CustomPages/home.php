@@ -35,19 +35,23 @@
         <?= $this->element('title', [
             'label' => 'come funziona',
             'title' => 'Consulenti e tecnici specializzati a tua disposizione, tutte le volte che hai bisogno ',
-            'extraClass' => 'text-center title--primary'
+            'extraClass' => 'text-center title--primary mb-96'
         ]); ?>
-        <?= $this->element('img-text', [    
-            'img' => 'img/img1.png',
-            'label' => 'architetto',
-            'title' => "Hai dubbi? Chiedi all'architetto",
-            'text' => "Un tecnico tra i nostri partner di zona ti aiuterà con la regolarizzazione del tuo immobile. Ti seguiremo dal sopralluogo tecnico alla presentazione della pratica edilizia, dandoti consigli e informazioni sull’iter amministrativo e su come rendere facilmente commerciabile il tuo immobile "
-        ]); ?>
-        <?= $this->element('img-text', [    
-            'img' => '',
-            'label' => '',
-            'title' => '',
-            'text' => ''
-        ]); ?>
+        <div class="home__info__content">
+            <?= $this->element('img-text', [    
+                'img' => 'img/img1.png',
+                'label' => 'architetto',
+                'title' => "Hai dubbi? Chiedi all'architetto",
+                'text' => "Un tecnico tra i nostri partner di zona ti aiuterà con la regolarizzazione del tuo immobile. Ti seguiremo dal sopralluogo tecnico alla presentazione della pratica edilizia, dandoti consigli e informazioni sull’iter amministrativo e su come rendere facilmente commerciabile il tuo immobile ",
+                'extraClass' => 'mb-96'
+            ]); ?>
+            <?= $this->element('img-text', [    
+                'img' => 'img/img2.png',
+                'label' => 'consulente tecnico',
+                'title' => 'Il tuo esperto di regolarizzazione a portata di clic.',
+                'text' => 'Un tecnico partner SANACASA della tua zona ti guida dalla A alla Z nella regolarizzazione del tuo immobile. Sopralluogo, pratiche, conformità: un professionista dedicato al tuo servizio online.',
+                'extraClass' => 'invert'
+            ]); ?>
+        </div>
     </div>
 </div>
