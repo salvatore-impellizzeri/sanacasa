@@ -37,6 +37,7 @@ $languages = Configure::read('Setup.languages');
                 <?= $this->element('cta', [
                     'label' => 'Inizia ora',
                     'url' => '#',
+                    'extraClass' => 'cta--primary'
                 ]); ?>
             </div>
         <?php endif; ?>

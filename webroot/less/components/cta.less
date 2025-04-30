@@ -2,7 +2,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: @cta-bg;
     color: @light-text-color;
     border-radius: 5em;
     padding: 1.1em 2.3em;
@@ -12,6 +11,14 @@
 
     @media screen and (max-width: @mobile-l) {
         height: 40px;
+    }
+
+    &--primary{
+        background: @cta-bg;
+    }
+
+    &--secondary{
+        background: @cta-bg-secondary;
     }
 
     svg{
