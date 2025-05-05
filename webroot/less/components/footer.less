@@ -1,14 +1,8 @@
 .footer {
-    display: flex;
-    height: 80px;
-    align-items: center;
-    padding: 0 clamp(10px, 75vw * @px2vw, 75px);
-    font-size: 12px;
-    background: @footer-bg;
+    padding: clamp(50px, 116vw * @px2vw, 116px) 0 clamp(120px, 226vw * @px2vw, 336px);
     color: @footer-color;
-    gap: clamp(10px, 90vw * @px2vw, 90px);
-    margin-top: 80px;
-
+    overflow: hidden;
+    position: relative;
 
     @media screen and (max-width: @tablet-l) {
         flex-direction: column;
@@ -22,6 +16,24 @@
         color: inherit;
     }
 
+    &__text{
+        width: clamp(250px, 700vw * @px2vw, 700px);
+
+        p{
+            margin-bottom: 3.75em;
+        }
+
+        .cta{
+            margin-bottom: 1.57em;
+        }
+    }
+
+    &__container{
+        width: clamp(350px, 1001vw * @px2vw, 1001px);
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__social{
         margin-left: auto;
 
@@ -32,7 +44,6 @@
 
     &__legal{
         display: flex;
-        justify-content: center;
         gap: 10px;
         color: black;
 
@@ -41,15 +52,44 @@
         }
     }
 
+    &__menu{
+        .font-20;
+        margin-bottom: 1.3em;
+    }
+
+    &__links{
+        color: #060062;
+
+        .cta{
+            color: @white;
+        }
+    }
+
     .menu{
+        color: #060062;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         gap: clamp(10px, 30vw * @px2vw, 30px);
 
         @media screen and (max-width: @tablet-l) {
             flex-wrap: wrap;
             gap: 1em;
             justify-content: center;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 3px);
+        width: clamp(300px, 1151vw * @px2vw, 1151px);
+        height: clamp(100px, 136vw * @px2vw, 136px);
+
+        svg{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
         }
     }
 }
