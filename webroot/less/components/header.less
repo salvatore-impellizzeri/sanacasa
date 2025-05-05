@@ -33,8 +33,11 @@
     }
 
     .body--scroll &{
-        background: @header-bg-color;
-        height: 100px;
+        background-color: rgba(255, 255, 255, 0.9);
+        
+        .menu__item{
+            color: @text-primary;
+        }
     }
 
     @media screen and (max-width: @l) {
