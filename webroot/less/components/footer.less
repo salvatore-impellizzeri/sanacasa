@@ -4,20 +4,17 @@
     overflow: hidden;
     position: relative;
 
-    @media screen and (max-width: @tablet-l) {
-        flex-direction: column;
-        gap: 15px;
-        height: auto;
-        padding: 40px 0;
-        text-align: center;
-    }
-
     a{
         color: inherit;
     }
 
     &__text{
         width: clamp(250px, 700vw * @px2vw, 700px);
+
+        @media screen and (max-width: @tablet-m) {
+            width: 100%;
+            margin-bottom: 5em;
+        }
 
         p{
             margin-bottom: 3.75em;
@@ -32,14 +29,14 @@
         width: clamp(350px, 1001vw * @px2vw, 1001px);
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: @tablet-m) {
+            flex-direction: column;
+        }
     }
 
     &__social{
         margin-left: auto;
-
-        @media screen and (max-width: @tablet-l) {
-            margin-left: 0;
-        }
     }
 
     &__legal{
@@ -70,10 +67,8 @@
         justify-content: space-between;
         gap: clamp(10px, 30vw * @px2vw, 30px);
 
-        @media screen and (max-width: @tablet-l) {
-            flex-wrap: wrap;
-            gap: 1em;
-            justify-content: center;
+        @media screen and (max-width: @tablet-m) {
+            justify-content: flex-start;
         }
     }
 
@@ -82,11 +77,9 @@
         left: 50%;
         bottom: 0;
         transform: translate(-50%, 3px);
-        width: clamp(300px, 1151vw * @px2vw, 1151px);
-        height: clamp(100px, 136vw * @px2vw, 136px);
+        width: clamp(350px, 1151vw * @px2vw, 1151px);
 
         svg{
-            height: 100%;
             width: 100%;
             object-fit: contain;
         }

@@ -31,7 +31,4 @@
     <div class="footer__img">
         <?= $this->Frontend->svg('logo.svg'); ?>
     </div>
-    <div class="footer__info">
-        <?= $this->element('snippet', ['id' => 1])?>
-    </div>
 </footer>
