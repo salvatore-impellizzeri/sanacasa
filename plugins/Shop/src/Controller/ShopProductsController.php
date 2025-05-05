@@ -39,6 +39,11 @@ class ShopProductsController extends AppController
         $this->set(compact('products'));
     }
 
+    public function test() {
+        $discounts = $this->ShopProducts->ShopDiscounts->find('active')->all();
+        dd($discounts);
+    }
+
 
 
 

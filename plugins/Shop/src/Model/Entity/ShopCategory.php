@@ -17,7 +17,7 @@ class ShopCategory extends Entity
 	// funzione per la generazione della url riscritta
 	protected function _getSefUrl()
     {
-		$path = '';
+		$path = Text::slug(__dx('shop', 'admin', 'sef prefix'), ['replacement' => '-']);
 		$crumbs = FactoryLocator::get('Table')->get('Shop.ShopCategories')->find('path', for: $this->id)->all();
 
 		foreach ($crumbs as $crumb) {

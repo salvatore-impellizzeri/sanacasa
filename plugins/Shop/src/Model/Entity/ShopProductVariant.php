@@ -8,6 +8,7 @@ use Cake\Utility\Text;
 use Cake\Datasource\FactoryLocator;
 use Cake\Core\Configure;
 
+
 class ShopProductVariant extends Entity
 {
 
@@ -22,11 +23,28 @@ class ShopProductVariant extends Entity
 	
 	protected function _getSefUrl()
     {
-		return Text::slug(__dx('shop', 'admin', 'sef prefix'), ['replacement' => '-']) . '/' . Text::slug($this->title, ['replacement' => '-']);				
+        $title = '';
+
+        if (!empty($this->shop_product_id)) {
+            $productId = $this->shop_product_id;
+            $brand = FactoryLocator::get('Table')->get('Shop.Brands')->find()
+                ->matching('ShopProducts', function($q) use ($productId){
+                    return $q->where(['ShopProducts.id' => $productId]);
+                })
+                ->first();
+                
+            if (!empty($brand)) {
+                $title = Text::slug($brand->title, ['replacement' => '-']) . ' ';
+            }
+        }
+        $title .= $this->title;
+        $path = Text::slug(__dx('shop', 'admin', 'sef prefix'), ['replacement' => '-']) . '/' . Text::slug($title, ['replacement' => '-']);
+		return trim($path, '/');				
     }
 
     protected function _getDisplayPrice()
     {
+        
         return Configure::read('Shop.vatIncuded') ? $this->price : $this->price_net;
     }
 

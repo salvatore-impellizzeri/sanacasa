@@ -40,7 +40,19 @@ class Plugin extends BasePlugin
     public function routes(RouteBuilder $routes): void
     {
 
-        $controllers = ['ShopProducts', 'ShopProductVariants', 'ShopCategories', 'Brands', 'VatRates', 'ColorGroups', 'Attributes', 'AttributeTypes', 'AttributeGroups'];
+        $controllers = [
+            'ShopProducts', 
+            'ShopProductVariants', 
+            'ShopCategories', 
+            'Brands', 
+            'VatRates', 
+            'ColorGroups', 
+            'Attributes', 
+            'AttributeTypes', 
+            'AttributeGroups', 
+            'ShopTags',
+            'ShopDiscounts'
+        ];
 
 		$routes->scope('/', function (RouteBuilder $builder) use ($controllers) {
 

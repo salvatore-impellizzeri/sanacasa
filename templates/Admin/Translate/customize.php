@@ -2,21 +2,23 @@
 
 use Cake\Utility\Inflector;
 
-$this->extend('/Admin/Common/setupEdit');
-$this->set('currentMenuId', 'Translate');
+$this->extend('/Admin/Common/edit');
 
-$this->set('controlsSettings', [
-	'pathway' => [
+$this->set('statusBarSettings', [
+    'icon' => 'translate',
+    'pathway' => [
 		[
-			'title' => __d('admin', 'settings translations'),
+			'title' => __d('admin', 'translations'),
 			'url' => ['plugin' => false, 'controller' => 'Translate', 'action' => 'index']
 		],
 		[
 			'title' => !empty($pluginName) ? __dx(Inflector::underscore($pluginName), 'admin', 'plugin name') : __d('admin', "_po {$file}")
 		],
 	]
-])
+]);
+
 ?>
+
 
 <?= $this->Form->create() ?>
 <div class="box">

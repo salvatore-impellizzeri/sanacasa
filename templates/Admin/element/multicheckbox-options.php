@@ -9,7 +9,7 @@
             </span>
         <?php else: ?>
             <span class="multiCheckbox__option__label" data-value-label>
-                <?= $item->title ?>
+                <?= $item->{$displayField ?? 'title'} ?>
             </span>
         <?php endif; ?>
         

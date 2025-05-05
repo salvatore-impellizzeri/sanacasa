@@ -46,6 +46,13 @@ class ContactFormsTable extends Table
 
         $this->addBehavior('Timestamp');
 
+        $this->addBehavior('MultiTranslatable', ['fields' => [
+            'reply_subject',
+            'reply_text',
+            'modified',
+            '_status'
+        ]]);
+
         $this->hasMany('ContactFields', [
             'foreignKey' => 'contact_form_id',
             'className' => 'Contacts.ContactFields',

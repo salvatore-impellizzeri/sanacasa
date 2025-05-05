@@ -682,6 +682,8 @@ class AppController extends Controller
 		$options = array_merge($default, $query);
 		extract($options);
 
+    
+
 		if (empty($search)) {
 			$records = $this->dbTable->find();
 		} else {
@@ -697,6 +699,7 @@ class AppController extends Controller
 		//restituisce le righe
 		$records->contain($this->queryContain);
 		$this->set('total', $records->count());
+        $this->set('displayField', $this->dbTable->getDisplayField());
 
 
         $records->limit((int)$rowsPerPage);

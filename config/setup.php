@@ -2,7 +2,7 @@
 	return [
 		'Setup' => [
 			'domain' => 'http://crispy.webmotion.it',
-			'sitename' => 'Sanacasa',
+			'sitename' => 'Crispy',
 			'mailto' => 'webmaster@webmotion.it', //si gestisce da pannello, da usare solo con la vecchia form.
 			'mailfrom' => 'sitoweb@webmotion.it',
 			'locale' => [

@@ -45,13 +45,19 @@ msgstr "Lingua"
 /*** Frontend ***/
 
 msgid "login title"
-msgstr "Accedi al tuo account"
+msgstr "Sei già cliente?"
 
 msgid "login"
 msgstr "Accedi"
 
-msgid "signup title"
+msgid "new client"
 msgstr "Sei un nuovo cliente?"
+
+msgid "signup title"
+msgstr "Crea il tuo account"
+
+msgid "sign up advantages"
+msgstr "Crea il tuo account per rendere più semplice e veloce la tua esperienza di acquisto. Registrandoti potrai gestire facilmente i tuoi ordini, consultare lo storico degli acquisti e salvare i tuoi dati per acquisti futuri più rapidi."
 
 msgid "signup"
 msgstr "Registrati"
@@ -69,7 +75,7 @@ msgid "fullname"
 msgstr "Nome e cognome"
 
 msgid "email"
-msgstr "Mail"
+msgstr "Indirizzo e-mail"
 
 msgid "password"
 msgstr "Password"

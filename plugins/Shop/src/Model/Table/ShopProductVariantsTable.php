@@ -42,6 +42,10 @@ class ShopProductVariantsTable extends AppTable
             'className' => 'Shop.ShopProducts'
         ]);
 
+        $this->hasMany('ShopPromoPrices', [
+            'className' => 'Shop.ShopPromoPrices'
+        ])->setDependent(true);
+
         $this->belongsToMany('Attributes', [
             'className' => 'Shop.Attributes',
             'joinTable' => 'attributes_shop_variants',
@@ -355,6 +359,13 @@ class ShopProductVariantsTable extends AppTable
     
         if($updateTitle) $entity->title = implode(' ', $title);
 
+        // calcolo la percentuale di sconto
+        if (!empty($entity->price) && !empty($entity->discounted_price)) {
+            $entity->discount_percentage = round(100 - (($entity->discounted_price / $entity->price) * 100), 2);
+        } else {
+            $entity->discount_percentage = null;
+        }
+
         // imposto il campo incomplete a false
         $entity->incomplete = false;
     }
@@ -374,6 +385,26 @@ class ShopProductVariantsTable extends AppTable
                 ]
             );
         }
+    }
+
+
+    public function afterDelete(EventInterface $event, EntityInterface $entity, ArrayObject $options)
+    {
+        // se cancello la variante predefinita ne imposta un'altra random come predefinita
+        if (!empty($entity->is_default) && !empty($entity->shop_product_id)) {
+            $newDefaultVariant = $this->findByShopProductId($entity->shop_product_id)->first();
+            if (!empty($newDefaultVariant)) {
+                $this->updateAll(
+                    [  // fields
+                        'is_default' => true,
+                    ],
+                    [  // conditions
+                        'id' => $newDefaultVariant->id
+                    ]
+                );
+            }
+        }
+
     }
 
 
@@ -428,6 +459,42 @@ class ShopProductVariantsTable extends AppTable
 
     }
 
+    // aggiunge il prezzo promo
+    public function addPromoPrice($shopDiscountId, $shopVariantId, $clientIds = [], $startingPrice, $percentage, $round = false, $validFrom, $validTo, $active) {
+        if (!empty($startingPrice) && $startingPrice > 0) {
+            $precision = $round ? 0 : 2;
+            $discountedPrice = $startingPrice - ($startingPrice * ($percentage / 100));
+
+            $data = [
+                'shop_discount_id' => $shopDiscountId,
+                'shop_product_variant_id' => $shopVariantId,
+                'client_id' => null,
+                'percentage' => $percentage,
+                'price' => $startingPrice,
+                'discounted_price' => round($discountedPrice, $precision),
+                'valid_from' => $validFrom,
+                'valid_to' => $validTo,
+                'active' => $active 
+            ];
+
+            if (empty($clientIds)) {
+                // lo sconto non è collegato ad un cliente
+                $shopPromoPrice = $this->ShopPromoPrices->newEntity($data);
+                $this->ShopPromoPrices->save($shopPromoPrice);
+            } else {
+                // salvo lo sconto per ogni cliente
+                foreach ($clientIds as $clientId) {
+                    $clientPromo = $data;
+                    $clientPromo['client_id'] = $clientId;
+                    $shopPromoPrice = $this->ShopPromoPrices->newEntity($clientPromo);
+                    $this->ShopPromoPrices->save($shopPromoPrice);
+                }
+            }
+            
+        }
+    }
+
+
     // trova il prodotto con variante di default
     public function findDefaultVariant(Query $query, array $options)
     {
@@ -449,12 +516,30 @@ class ShopProductVariantsTable extends AppTable
         return $query;
     }
 
+    // trova tutte le varianti di una determinata categoria/e
+    public function findByCategory(Query $query, array $category)
+    {
+        
+        $query->matching('ShopProducts', function(Query $q) use ($category){
+                return $q->matching('ShopCategories', function(Query $q) use ($category){
+                    return $q->where(['ShopCategories.id IN' => $category]);
+                });
+            })
+            ->group('ShopProductVariants.id');
+            
 
+        return $query;
+    }
+
+    // finder custom per backend
 	public function findFiltered(Query $query, array $options)
     {
         $key = $options['key'];
         return $query->where(['ShopProductVariants.title LIKE' => "%" . trim($key) . "%"]);
     }
+
+
+    
 
 
 }

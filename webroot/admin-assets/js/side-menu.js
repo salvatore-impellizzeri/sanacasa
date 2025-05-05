@@ -14,7 +14,6 @@ $(function () {
 		
 		$(item).toggleClass('side-menu__item--open');
             isOpen = Number($(item).hasClass('side-menu__item--open'));
-            console.log(isOpen)
             $.get('/admin/magic/setSubmenuStatus/' + submenuID + '/' + isOpen, function(response){
 			
 		});

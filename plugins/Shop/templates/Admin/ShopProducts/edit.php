@@ -44,6 +44,11 @@ $this->set('statusBarSettings', [
                         'label' => __dx($po, 'admin', 'shop_category'),
                         'url' => ['controller' => 'ShopCategories', 'action' => 'checkbox']
                     ]);
+
+                    echo $this->Backend->belongsToMany('shop_tags', $item, [
+                        'label' => __dx($po, 'admin', 'shop_tag'),
+                        'url' => ['controller' => 'ShopTags', 'action' => 'checkbox']
+                    ]);
                     ?>
                 </fieldset>
 
@@ -771,6 +776,8 @@ let productApp = new Vue({
             }).then((result) => {
                 if (!result.isConfirmed) return;
 
+                this.showLoading();
+
                 axios.get('<?= $this->Url->build(['action' => 'deleteVariant.json']) ?>', {
                     params: {
                         id: id
@@ -779,8 +786,8 @@ let productApp = new Vue({
                 .then(function (response) {
                     if (response.status == 200){
                         if (response.data.delete) {
-                            let recordIndex = productApp.productVariants.findIndex(el => el.id === id);
-                            if (recordIndex != -1) productApp.productVariants.splice(recordIndex,1);
+                            productApp.getProductVariants();
+                            productApp.hideLoading();
                             window.getFlash();
                         } else {
                             Swal.fire({

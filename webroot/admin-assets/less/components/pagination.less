@@ -4,24 +4,28 @@
     bottom: 0;
     display: flex;
     padding: 10px 5px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 5px;
 
     .prev,
     .next {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
         display: flex;
         align-items: center;
-        color: @black;
-        text-transform: uppercase;
-        gap: 5px;
+        justify-content: center;
+        border-radius: 50%;
+        color: @ratgray;
+        background: @light;
         cursor: pointer;
-        .font-14();
         &--disabled{
             pointer-events: none;
             opacity: .2;
         }
         span {
-            color: @black;
+            color: @ratgray;
             font-size: 20px;
         }
     }

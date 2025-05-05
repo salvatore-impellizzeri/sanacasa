@@ -352,3 +352,33 @@ msgstr "Si è verificato un errore durante il caricamento del file"
 
 msgid "uploader restriction error"
 msgstr "Non è possibile caricare il file"
+
+msgid "image attributes"
+msgstr "Dettagli immagine"
+
+msgid "width"
+msgstr "Larghezza"
+
+msgid "height"
+msgstr "Altezza"
+
+msgid "filename"
+msgstr "Nome file"
+
+msgid "image description"
+msgstr "Descrizione immagine (alt)"
+
+msgid "related video"
+msgstr "Video collegato"
+
+msgid "mobile related video"
+msgstr "Video collegato (mobile)"
+
+msgid "mobile image upload"
+msgstr "Carica un'immagine differente per il mobile"
+
+msgid "click or drag to upload"
+msgstr "Clicca per caricare i file o trascinali nel box"
+
+msgid "translations"
+msgstr "Traduzioni"

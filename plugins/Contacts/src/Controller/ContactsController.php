@@ -131,6 +131,7 @@ class ContactsController extends AppController
                                     ->setEmailFormat('html')
                                     ->setFrom([Configure::read('Setup.mailfrom') => Configure::read('Setup.sitename')])
                                     ->setTo($data['email'])
+									->setReplyTo($contactForm->mailto)
                                     ->setSubject($contactForm->reply_subject)
                                     ->viewBuilder()
                                     ->setTemplate('reply')
@@ -154,6 +155,7 @@ class ContactsController extends AppController
 							// reset form. Necessario? Corretto?
 							$this->request = $this->request->withParsedBody([]);
 
+                            $resp['action'] = 'contactsent';
 							$resp['sent'] = true;
 							$resp['message'] = __d($this->po, 'message sent');
 							$this->Flash->success(__d($this->po, 'message sent'));
@@ -166,6 +168,7 @@ class ContactsController extends AppController
 						$log = $this->request->clientIp() . ' - ' . 'ERRORE NEL SALVATAGGIO: ' . json_encode($this->request->getData());
 						Log::info($log, 'contacts');
 
+                        $resp['action'] = 'contactsent';
 						$resp['sent'] = false;
 						$resp['message'] = $error_message;
 						$resp['errors'] = empty($errors) ? null : $errors;
@@ -178,6 +181,7 @@ class ContactsController extends AppController
 					$log = $this->request->clientIp() . ' - ' . 'RILEVATO TENTATIVO DI SPAM: ' . json_encode($this->request->getData());
 					Log::info($log, 'contacts');
 
+                    $resp['action'] = 'contactsent';
 					$resp['sent'] = false;
 					$resp['message'] = $error_message;
 					$resp['spam'] = 1;

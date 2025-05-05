@@ -427,6 +427,13 @@ return [
 			'scopes' => ['logout'],
 			'levels' => [],
         ],
+        'clients' => [
+            'className' => FileLog::class,
+            'path' => LOGS,
+            'file' => 'clients',
+			'scopes' => ['clients'],
+			'levels' => [],
+        ],
         // To enable this dedicated query log, you need set your datasource's log flag to true
         'queries' => [
             'className' => FileLog::class,

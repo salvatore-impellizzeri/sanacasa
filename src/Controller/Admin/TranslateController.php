@@ -74,7 +74,7 @@ class TranslateController extends AppController
 					});
 				}
 
-				$allowedPlugins = ['Blog', 'Clients', 'Orders', 'Subscriptions', 'ContentBlocks', 'Contacts', 'Coupons', 'HelpRequests', 'Newsletters', 'Products', 'Reviews'];
+				$allowedPlugins = ['Blog', 'Clients', 'ContentBlocks', 'Contacts', 'Products'];
 
 				if (in_array($pluginName, $allowedPlugins)) {
 

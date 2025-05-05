@@ -1,14 +1,95 @@
+msgid "username"
+msgstr "Username"
+
+msgid "password"
+msgstr "Password"
+
+msgid "your password"
+msgstr "Your password"
+
+msgid "new password"
+msgstr "New user password"
+
+msgid "new personal password"
+msgstr "New password"
+
+msgid "wrong user password"
+msgstr "The entered password is incorrect"
+
+msgid "strong password"
+msgstr "The password must be at least 8 characters long and contain a number"
+
+msgid "set new password"
+msgstr "Change password"
+
+msgid "email"
+msgstr "Email"
+
+msgid "active"
+msgstr "Active"
+
+msgid "login"
+msgstr "Login"
+
+msgid "Invalid username or password"
+msgstr "Invalid username or password"
+
 msgid "add action"
 msgstr "Add"
+
+msgid "add tag"
+msgstr "Manage tags"
 
 msgid "search"
 msgstr "Search"
 
+msgid "done"
+msgstr "Done"
+
+msgid "save form"
+msgstr "Save"
+
+msgid "Save success"
+msgstr "Saved successfully"
+
+msgid "Save error"
+msgstr "Error saving. Check the entered data and try again."
+
+msgid "Delete success"
+msgstr "Item deleted!"
+
+msgid "Delete error"
+msgstr "Unable to delete this item"
+
+msgid "block empty quote"
+msgstr "Select a page template and create something amazing!"
+
+msgid "choose one"
+msgstr "Choose an option"
+
 msgid "rows per page"
-msgstr "Row per page"
+msgstr "Rows per page"
 
 msgid "title"
 msgstr "Title"
+
+msgid "preview"
+msgstr "Preview image"
+
+msgid "date"
+msgstr "Date"
+
+msgid "datetime"
+msgstr "Date and time"
+
+msgid "time"
+msgstr "Time"
+
+msgid "excerpt"
+msgstr "Summary"
+
+msgid "text"
+msgstr "Description"
 
 msgid "created"
 msgstr "Created"
@@ -16,8 +97,41 @@ msgstr "Created"
 msgid "published"
 msgstr "Published"
 
+msgid "color"
+msgstr "Color"
+
+msgid "color bg"
+msgstr "Article background"
+
+msgid "color winery"
+msgstr "Winery color"
+
+msgid "seotitle"
+msgstr "SEO title"
+
+msgid "seodescription"
+msgstr "SEO description"
+
+msgid "seokeywords"
+msgstr "Keywords"
+
 msgid "edit"
 msgstr "Edit"
+
+msgid "compose"
+msgstr "Compose page"
+
+msgid "editing in"
+msgstr "Editing in"
+
+msgid "editing seo"
+msgstr "SEO edits"
+
+msgid "editing social"
+msgstr "Social edits"
+
+msgid "undo"
+msgstr "Undo"
 
 msgid "delete"
 msgstr "Delete"
@@ -31,38 +145,11 @@ msgstr "Next"
 msgid "settings"
 msgstr "Settings"
 
+msgid "website settings"
+msgstr "Website settings"
+
 msgid "logout"
-msgstr "Exit"
-
-msgid "username"
-msgstr "Username"
-
-msgid "password"
-msgstr "Password"
-
-msgid "login"
-msgstr "Enter"
-
-msgid "Invalid username or password"
-msgstr "Wrong username or password"
-
-msgid "add tag"
-msgstr "Add tag"
-
-msgid "done"
-msgstr "Done"
-
-msgid "save form"
-msgstr "Save"
-
-msgid "save exit"
-msgstr "Save and exit"
-
-msgid "block empty quote"
-msgstr ""
-
-msgid "choose one"
-msgstr "Choose one"
+msgstr "Logout"
 
 msgid "users"
 msgstr "Users"
@@ -71,19 +158,46 @@ msgid "change password"
 msgstr "Change password"
 
 msgid "users group"
-msgstr ""
+msgstr "User group"
 
 msgid "user groups"
-msgstr ""
+msgstr "User groups"
 
 msgid "to website"
 msgstr "Go to website"
 
-msgid "settings translations"
-msgstr "Translations"
+msgid "available blocks"
+msgstr "Layout tools"
+
+msgid "drag blocks here"
+msgstr "Drag blocks to start composing the page"
+
+msgid "delete confirm"
+msgstr "Are you sure you want to delete this item?"
+
+msgid "Delete success"
+msgstr "Deleted!"
+
+msgid "Delete error"
+msgstr "Error deleting the item"
+
+msgid "go back"
+msgstr "Go back"
+
+msgid "preview action"
+msgstr "Preview"
+
+msgid "empty table"
+msgstr "No results found"
 
 msgid "settings menu"
 msgstr "Menu"
+
+msgid "settings backend menu"
+msgstr "Admin panel menu"
+
+msgid "settings translations"
+msgstr "Translations"
 
 msgid "settings content blocks"
 msgstr "Layout blocks"
@@ -94,17 +208,56 @@ msgstr "Users"
 msgid "settings groups"
 msgstr "Groups"
 
-msgid "settings backend menu"
-msgstr "Manage plugins"
+msgid "_po global"
+msgstr "Global"
+
+msgid "_po cookies"
+msgstr "Cookies"
+
+msgid "_po cake"
+msgstr "Core and validation"
 
 msgid "manage translations"
 msgstr "Manage translations"
 
-msgid "manage items"
-msgstr "Manage plugins"
+msgid "add"
+msgstr "Add"
+
+msgid "compose"
+msgstr "Compose the page"
+
+msgid "changePassword"
+msgstr "Change the password"
+
+msgid "multicheckbox no results found"
+msgstr "No items found"
+
+msgid "invalid device"
+msgstr "Please use another device."
+
+msgid "invalid device message"
+msgstr "Our admin panel uses advanced technologies not supported at this resolution"
+
+msgid "invalid device hint"
+msgstr "Access from a computer or a tablet in landscape orientation"
+
+msgid "quick edit"
+msgstr "Quick edit"
+
+msgid "menu functions"
+msgstr "Functions"
+
+msgid "menu custom pages"
+msgstr "Pages"
+
+msgid "menu block pages"
+msgstr "Composable pages"
+
+msgid "menu product categories"
+msgstr "Product categories"
 
 msgid "tabs general"
-msgstr "General"
+msgstr "Edit"
 
 msgid "tabs seo"
 msgstr "SEO"
@@ -112,35 +265,119 @@ msgstr "SEO"
 msgid "tabs social"
 msgstr "Social"
 
+msgid "tabs details"
+msgstr "Details"
+
 msgid "tabs preview"
 msgstr "Preview"
+
+msgid "tabs orders"
+msgstr "Orders"
+
+msgid "tabs subscriptions"
+msgstr "Subscriptions"
+
+msgid "stay"
+msgstr "Stay on page"
+
+msgid "save exit"
+msgstr "Save and exit"
+
+msgid "social preview"
+msgstr "Social sharing image"
+
+msgid "This field cannot be left blank"
+msgstr "This is a required field"
+
+msgid "yes"
+msgstr "Yes"
+
+msgid "no"
+msgstr "No"
+
+msgid "Select"
+msgstr "Select"
+
+msgid "view"
+msgstr "View details"
+
+msgid "Not found"
+msgstr "Item not found"
+
+msgid "export action"
+msgstr "Export"
+
+msgid "export products action"
+msgstr "Export products"
+
+msgid "all"
+msgstr "All"
+
+msgid "all f"
+msgstr "All"
 
 msgid "uploader upload"
 msgstr "Upload an image"
 
 msgid "uploader upload drag"
-msgstr "Click or drag and drop here your image"
+msgstr "Click to upload the image or drag it into the box"
 
 msgid "uploader upload icon"
-msgstr "Upload your icon"
+msgstr "Upload an icon"
 
 msgid "uploader upload icons"
-msgstr "Upload your icons"
+msgstr "Upload icons"
 
 msgid "uploader upload image"
 msgstr "Upload images"
 
 msgid "uploader upload drag images"
-msgstr "Click or drag and drop here your images"
+msgstr "Click to upload images or drag them into the box"
 
 msgid "uploader upload file"
-msgstr "Upload your file"
+msgstr "Upload a file"
 
 msgid "uploader upload drag file"
-msgstr "Click or drag and drop here your file"
+msgstr "Click to upload the file or drag it into the box"
 
 msgid "uploader upload files"
-msgstr "Upload your files"
+msgstr "Upload files"
 
 msgid "uploader upload drag files"
-msgstr "Click or drag and drop here your files"
+msgstr "Click to upload files or drag them into the box"
+
+msgid "uploader upload error"
+msgstr "An error occurred while uploading the file"
+
+msgid "uploader restriction error"
+msgstr "The file cannot be uploaded"
+
+msgid "image attributes"
+msgstr "Image's attributes"
+
+msgid "width"
+msgstr "Width"
+
+msgid "height"
+msgstr "Height"
+
+msgid "filename"
+msgstr "Filename"
+
+msgid "image description"
+msgstr "Image description (alt)"
+
+msgid "related video"
+msgstr "Related video"
+
+msgid "mobile related video"
+msgstr "Mobile related video"
+
+msgid "mobile image upload"
+msgstr "Upload a different image for mobile devices"
+
+msgid "click or drag to upload"
+msgstr "Click to upload the image or drag it into the box"
+
+msgid "translations"
+msgstr "Translations"

@@ -23,14 +23,20 @@ class TableHelper extends Helper
     }
 
     public function paginator(){
-        $prev = $this->Html->div(
+        $first = $this->Html->div(
             'prev',
-            $this->Backend->materialIcon('chevron_left').' '.__d('admin', 'previous'),
-            ['@click' => 'goToPage( page-1 )', 'v-bind:class' => "[ loading || page < 1 ? 'prev--disabled' : '' ]"]
+            $this->Backend->materialIcon('first_page'),
+            ['@click' => 'goToPage(0)', 'v-bind:class' => "[ loading || page < 1 ? 'prev--disabled' : '' ]"]
         );
 
+        $prev = $this->Html->div(
+            'prev',
+            $this->Backend->materialIcon('chevron_left'),
+            ['@click' => 'goToPage( page-1 )', 'v-bind:class' => "[ loading || page < 1 ? 'prev--disabled' : '' ]"]
+        );
+        
         $page = $this->Html->tag('div', '{{ value }}', [
-            'v-for' => 'value in totalPages',
+            'v-for' => 'value in pagination',
             '@click' => 'goToPage( value - 1 )',
             'v-bind:class' => "[ page === value - 1 ? 'page active' : 'page' ]"
         ]);
@@ -39,11 +45,17 @@ class TableHelper extends Helper
 
         $next = $this->Html->div(
             'next',
-            __d('admin', 'next').' '.$this->Backend->materialIcon('chevron_right'),
-            ['@click' => 'goToPage( page+1 )', 'v-bind:class' => "[ loading || page + 1 >= totalPages ? 'next--disabled' : '' ]"]
+            $this->Backend->materialIcon('chevron_right'),
+            ['@click' => 'goToPage( page+1 )', 'v-bind:class' => "[ loading || page + 1 == totalPages ? 'next--disabled' : '' ]"]
         );
 
-        return $this->Html->div('pagination', $prev.$pages.$next);
+        $last = $this->Html->div(
+            'next',
+            $this->Backend->materialIcon('last_page'),
+            ['@click' => 'goToPage( totalPages - 1 )', 'v-bind:class' => "[ loading || page + 1 == totalPages ? 'next--disabled' : '' ]"]
+        );
+
+        return $this->Html->div('pagination', $first.$prev.$pages.$next.$last, ['v-if' => 'totalPages > 1']);
     }
 
     public function defaultSort(){

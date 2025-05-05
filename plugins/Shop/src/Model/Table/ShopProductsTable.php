@@ -45,9 +45,22 @@ class ShopProductsTable extends AppTable
             'className' => 'Shop.VatRates'
         ]);
 
+        // categorie
 		$this->belongsToMany('ShopCategories', [
             'className' => 'Shop.ShopCategories',
             'joinTable' => 'shop_categories_products'
+        ]);
+
+        // tag
+        $this->belongsToMany('ShopTags', [
+            'className' => 'Shop.ShopTags',
+            'joinTable' => 'shop_tags_products'
+        ]);
+
+        // sconti
+        $this->belongsToMany('ShopDiscounts', [
+            'className' => 'Shop.ShopDiscounts',
+            'joinTable' => 'shop_discounts_products'
         ]);
 
         // attributi prodotto

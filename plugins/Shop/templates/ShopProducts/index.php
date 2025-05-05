@@ -15,7 +15,7 @@ $(function () {
         return new URLSearchParams(params).toString();
     }   
 
-    function loadProducts() {
+    function loadProducts(pushState = true) {
         $productsContainer.addClass('shop__grid--loading');
         $.get('<?= $this->Frontend->url('/shop-products/get') ?>', {
             page: page,    
@@ -23,7 +23,13 @@ $(function () {
             $productsContainer.removeClass('shop__grid--loading');
             $productsContainer.html(data);
             updatePagination();
-            history.pushState({ page: page }, "", "?" + buildQueryString());
+            if (pushState){
+                history.pushState({ page: page }, "", "?" + buildQueryString());
+                document.querySelector('[data-shop-products]').scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+            
         });
     }
 
@@ -33,13 +39,16 @@ $(function () {
     }
 
     window.addEventListener("popstate", function (event) {
-        if (event.state) {
+        if (event.state !== null) {
             page = event.state.page;
-            loadProducts();
+            loadProducts(false);
+        } else {
+            page = 1;
+            loadProducts(false);
         }
     });
 
-    loadProducts();
+    loadProducts(false);
 
     $paginationLinks.on('click', function(ev){
         ev.preventDefault();

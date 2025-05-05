@@ -31,7 +31,7 @@
     </div>
 
     <!-- COME FUNZIONA -->
-    <div class="home__info pt-150 container-s m-auto">
+    <div class="home__info pt-150 pb-150 container-s m-auto">
         <?= $this->element('title', [
             'label' => 'come funziona',
             'title' => 'Consulenti e tecnici specializzati a tua disposizione, tutte le volte che hai bisogno ',
@@ -52,6 +52,47 @@
                 'text' => 'Un tecnico partner SANACASA della tua zona ti guida dalla A alla Z nella regolarizzazione del tuo immobile. Sopralluogo, pratiche, conformità: un professionista dedicato al tuo servizio online.',
                 'extraClass' => 'invert'
             ]); ?>
+        </div>
+        <?= $this->element('cta', [
+            'label' => 'Scopri di più',
+            'url' => '#',
+            'extraClass' => 'cta--unique'
+        ]); ?>
+    </div>
+
+    <!-- INFO POSIZIONE -->
+    <div class="home__position bg-primary pt-134 pb-134">
+        <div class="container-m m-auto home__position__content">
+            <div class="home__position__selection">
+                <?= $this->element('title', [
+                    'label' => 'dove siamo',
+                    'title' => 'Scopri i nostri servizi attivi nella tua zona',
+                    'extraClass' => 'title--primary mb-50'
+                ]); ?>
+                <div>
+                    <!-- FORM -->
+                    <!-- gli stili dei bottoni sono già stati fatti su cta.less -->
+                </div>
+            </div>
+            <div>
+                <div class="home__position__img">
+                    <img src="img/italy.png" alt="Italia">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME FORM -->
+    <div class="home__form pb-182 pt-182 bg-gradient-blue">
+        <div class="m-auto container-form">
+            <?= $this->element('title', [
+                'label' => 'inizia ora',
+                'title' => 'Parla con un nostro consulente tecnico e scopri come gestire la tua sanatoria edilizia.',
+                'extraClass' => 'text-center title--white mb-54'
+            ]); ?>
+        </div>
+        <div class="home__form__content">
+            <!-- FORM -->
         </div>
     </div>
 </div>

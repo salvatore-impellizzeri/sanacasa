@@ -1,3 +1,51 @@
-tmp
-vendor
-.htaccess
+# CakePHP specific files #
+##########################
+/config/.env
+/logs/*
+/tmp/*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+# Icon must end with two \r
+Icon
+
+ehthumbs.db
+Thumbs.db
+.directory
+
+# Tool specific files #
+#######################
+# PHPUnit
+.phpunit.result.cache
+tests.sqlite
+# vim
+*~
+*.swp
+*.swo
+# sublime text & textmate
+*.sublime-*
+*.stTheme.cache
+*.tmlanguage.cache
+*.tmPreferences.cache
+# Eclipse
+.settings/*
+# JetBrains, aka PHPStorm, IntelliJ IDEA
+.idea/*
+# NetBeans
+nbproject/*
+# Visual Studio Code
+.vscode
+# Sass preprocessor
+.sass-cache/
+
+# CMS #
+##########################
+webroot/cache_assets/admin.css
+webroot/cache_assets/frontend.js
+webroot/cache_assets/login.css
+webroot/cache_assets/main.css

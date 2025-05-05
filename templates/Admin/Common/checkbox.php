@@ -4,9 +4,9 @@ if (!$total) {
 } else {
     echo $this->element('multicheckbox-options', [
         'items' => $records,
-        'checked' => $checked
+        'checked' => $checked,
+        'displayField' => $displayField ?? null
     ]);
-    
 }
 
 ?>

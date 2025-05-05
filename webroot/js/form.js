@@ -57,6 +57,10 @@
                         //gtag('event', 'generate_lead', {'event_category': 'Contatto'}); // nuovo GTAG - da abilitare per tracciamento Google Analytics
                         //if (typeof fbq !== 'undefined') { fbq('track', 'Lead'); }
                         $form[0].reset();
+
+                        if (result['redirect']) {
+                            window.location.href = result['redirect'];
+                        }
                     }
 
                     if(result['spam']) {

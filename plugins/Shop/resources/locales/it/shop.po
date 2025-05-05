@@ -15,6 +15,14 @@ msgid "brands"
 msgstr "Brand"
 
 msgctxt "admin"
+msgid "tags"
+msgstr "Tag"
+
+msgctxt "admin"
+msgid "discounts"
+msgstr "Promozioni"
+
+msgctxt "admin"
 msgid "vat rates"
 msgstr "Aliquote IVA"
 
@@ -65,6 +73,10 @@ msgstr "Categoria superiore"
 msgctxt "admin"
 msgid "shop_category"
 msgstr "Categoria"
+
+msgctxt "admin"
+msgid "shop_tag"
+msgstr "Tag"
 
 msgctxt "admin"
 msgid "gallery"
@@ -318,6 +330,66 @@ msgstr "Se esci da questa pagina senza aver salvato le modifiche perderai i dati
 msgctxt "admin"
 msgid "sef prefix"
 msgstr "shop"
+
+msgctxt "admin"
+msgid "discount_percentage"
+msgstr "Percentuale di sconto"
+
+msgctxt "admin"
+msgid "active"
+msgstr "Attivo"
+
+msgctxt "admin"
+msgid "discount_type"
+msgstr "Applica a"
+
+msgctxt "admin"
+msgid "all products"
+msgstr "Tutto il catalogo"
+
+msgctxt "admin"
+msgid "some categories"
+msgstr "Categorie specifiche"
+
+msgctxt "admin"
+msgid "some products"
+msgstr "Prodotti specifici"
+
+msgctxt "admin"
+msgid "some products"
+msgstr "Prodotti specifici"
+
+msgctxt "admin"
+msgid "discount_clients"
+msgstr "Account clienti"
+
+msgctxt "admin"
+msgid "shop_categories"
+msgstr "Categorie prodotti"
+
+msgctxt "admin"
+msgid "shop_products"
+msgstr "Prodotti"
+
+msgctxt "admin"
+msgid "valid_from"
+msgstr "Data inizio validità"
+
+msgctxt "admin"
+msgid "valid_to"
+msgstr "Data fine validità"
+
+msgctxt "admin"
+msgid "discount_percentage"
+msgstr "Percentuale di sconto"
+
+msgctxt "admin"
+msgid "round_discounts"
+msgstr "Arrotonda il prezzo"
+
+msgctxt "admin"
+msgid "end date must be greater than start date"
+msgstr "La data di fine deve essere maggiore della data di inizio"
 
 /*** Frontend ***/
 

@@ -40,7 +40,6 @@ if (empty($fields->count())) return;
                     echo $this->Form->control($field->field, [
                         'label' => $field->label,
                         'type' => $field->type,
-                        'placeholder' => $field->label,
                         'required' => $field->required,
                         'extraClass' => 'input--'.$field->id,
                         'escape' => false
@@ -58,8 +57,8 @@ if (empty($fields->count())) return;
                 case 'select':    
                     $options = explode("\n", $field->multiple_values);     
                     echo $this->Form->control($field->field, [
-                        'label' => false,
-                        'empty' => $field->label . ($field->required ? ' *' : ''),
+                        'label' => $field->label,
+                        'empty' => __d('global', 'select'),
                         'type' => $field->type,
                         'required' => $field->required,
                         'extraClass' => 'input--'.$field->id,
@@ -69,7 +68,7 @@ if (empty($fields->count())) return;
                     break;
                 case 'date':
                     echo $this->Form->control($field->field, [
-                        'label' => false,
+                        'label' => $field->label,
                         'type' => 'text',
                         'placeholder' => $field->label.($field->required ? ' *' : ''),
                         'required' => $field->required,

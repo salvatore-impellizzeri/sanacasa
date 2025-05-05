@@ -21,6 +21,26 @@
         background: @cta-bg-secondary;
     }
 
+    &--unique{
+        padding: 1.35em 2.4em;
+        color: @text-primary;
+        background-color: @bg-primary;
+    }
+
+    &--selected{
+        font-weight: 400;
+        background-color: @white;
+        border: 1px solid @indigo;
+        color: @indigo;
+    }
+
+    &--unselected{
+        font-weight: 400;
+        border: 1px solid @indigo;
+        color: @indigo;
+        opacity: 50%;
+    }
+
     svg{
         path{
             fill: @cta-color;

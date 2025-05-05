@@ -13,7 +13,6 @@ use Cake\Http\Exception\ForbiddenException;
 use Cake\Http\Exception\NotFoundException;
 use Cake\Auth\DefaultPasswordHasher;
 use Cake\Core\Configure;
-use Stripe\Stripe;
 use Cake\Http\Client;
 
 
@@ -38,30 +37,84 @@ class ClientsController extends AppController
 	public function add()
 	{
 		$client = $this->Clients->newEmptyEntity();
-        if ($this->request->is('post')) {
-            $client = $this->Clients->patchEntity($client, $this->request->getData());
 
-			$client->enabled = 1;
+        if ($this->request->is('post') && $this->request->is('ajax')) {
 
-            if ($this->Clients->save($client)) {
-                $this->Flash->success(__d('clients', 'signup success'));
+            $nospam = false;
+			$error_message = __d('clients', 'signup error');
+			$resp = [];
 
-				// email di benvenuto
-				$locale = $client->locale;
+            if (!empty($this->request->getData())) {
+                $token = $this->Session->read('token');
+				$time_taken = microtime(true) - $this->Session->read('token_time_start');
 
+				$dataToken = $this->request->getData($token);
 
-				if(ACTIVE_LANGUAGE != DEFAULT_LANGUAGE) {
-					$redirect = $this->Session->read('afterLoginRedirect') ?? '/' . ACTIVE_LANGUAGE . '/';
-				} else {
-					$redirect = $this->Session->read('afterLoginRedirect') ?? '/';
+				// se il tempo di invio è minore di 1.5s ed è presente il token,
+				// ma è vuoto (ecco perché il doppio controllo isset ed empty)
+				// allora non dovrebbe essere spam
+				if(
+					!empty($token) &&
+					!empty($time_taken) &&
+					$time_taken > 1.5 &&
+					isset($dataToken) &&
+					empty($dataToken)
+				) {
+					$nospam = true;
 				}
 
-				$this->Authentication->setIdentity($client);
-				return $this->redirect($redirect);
+                if($nospam) {
+                    $client = $this->Clients->patchEntity($client, $this->request->getData());
+                    $client->enabled = 1;
 
+                    if ($this->Clients->save($client)) {
+                        $message = __d('clients', 'signup success');
+                        $this->Flash->success($message);
 
+                        if(ACTIVE_LANGUAGE != DEFAULT_LANGUAGE) {
+                            $redirect = $this->Session->read('afterLoginRedirect') ?? '/' . ACTIVE_LANGUAGE . '/';
+                        } else {
+                            $redirect = $this->Session->read('afterLoginRedirect') ?? '/';
+                        }
+        
+                        $this->Authentication->setIdentity($client);
+                        $resp['action'] = 'signup';
+                        $resp['sent'] = true;
+                        $resp['message'] = $message;
+                        $resp['redirect'] = $redirect;
+                        
+                        
+                    } else {
+                        $log = $this->request->clientIp() . ' - ' . 'ERRORE REGISTRAZIONE CLIENTE: ' . json_encode($this->request->getData());
+						Log::info($log, 'clients');
+
+                        $errors = $client->getErrors();
+
+                        $resp['action'] = 'signup';
+						$resp['sent'] = false;
+						$resp['message'] = $error_message;
+						$resp['errors'] = empty($errors) ? null : $errors;
+
+						$this->Flash->error($error_message);
+                    }
+
+                } else {
+                    $log = $this->request->clientIp() . ' - ' . 'RILEVATO TENTATIVO DI SPAM: ' . json_encode($this->request->getData());
+					Log::info($log, 'clients');
+
+                    $resp['action'] = 'signup';
+					$resp['sent'] = false;
+					$resp['message'] = $error_message;
+					$resp['spam'] = 1;
+					$resp['errors'] = null;
+
+					$this->Flash->error($error_message);
+                }
+
+                $this->set('resp', $resp);
+                $this->viewBuilder()->setClassName('Json');
+                $this->viewBuilder()->setOption('serialize', 'resp');
             }
-            $this->Flash->error(__d('clients', 'signup error'));
         }
         $this->set('client', $client);
 	}

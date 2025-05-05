@@ -54,30 +54,6 @@ msgctxt "admin"
 msgid "multiple_values"
 msgstr "Valori scelta multipla (separali con un INVIO)"
 
-msgid "fullname"
-msgstr "Nome e cognome"
-
-msgid "company"
-msgstr "Azienda"
-
-msgid "email"
-msgstr "Mail"
-
-msgid "phone"
-msgstr "Telefono"
-
-msgid "message"
-msgstr "Messaggio"
-
-msgid "subject"
-msgstr "Oggetto"
-
-msgid "privacy policy"
-msgstr "trattamento dei miei dati personali"
-
-msgid "privacy disclaimer {0}"
-msgstr "Dichiaro di aver letto e di accettare il {0}"
-
 msgid "send"
 msgstr "Invia messaggio"
 

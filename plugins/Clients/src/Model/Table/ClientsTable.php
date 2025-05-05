@@ -16,8 +16,6 @@ use Cake\Core\Configure;
 use Cake\Utility\Text;
 use Cake\Utility\Security;
 use Authentication\PasswordHasher\DefaultPasswordHasher;
-use Stripe\Stripe;
-use Stripe\Customer;
 
 
 
@@ -35,6 +33,12 @@ class ClientsTable extends AppTable
         $this->addBehavior('Timestamp');
 
 
+        // relazioni per shop
+        $this->hasMany('ShopPromoPrices', [
+            'className' => 'Clients.ShopPromoPrices'
+        ])->setDependent(true);
+
+
     }
 
 
@@ -45,9 +49,23 @@ class ClientsTable extends AppTable
             ->allowEmptyString('id', null, 'create');
 
         $validator
+            ->boolean('is_company')
+            ->requirePresence('is_company', 'create')
+            ->notEmptyString('is_company');
+
+        $validator
             ->scalar('fullname')
             ->requirePresence('fullname', 'create')
             ->notEmptyString('fullname');
+
+        $validator
+            ->scalar('company')
+            ->requirePresence('company', 'create')
+            ->notEmptyString('company', __d('cake', 'This field is required'), function ($context) {
+                return !empty($context['data']['is_company']);
+            });
+
+        
 
 		$validator
             ->email('email')

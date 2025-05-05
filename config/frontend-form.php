@@ -11,7 +11,7 @@ return [
     'fieldset' => '<fieldset{{attrs}}>{{content}}</fieldset>',
     'formStart' => '<form{{attrs}}>',
     'formEnd' => '</form>',
-    'formGroup' => '{{input}}{{label}}',
+    'formGroup' => '{{label}}{{input}}',
     'hiddenBlock' => '<div style="display:none;">{{content}}</div>',
     'input' => '<input type="{{type}}" name="{{name}}"{{attrs}}/>',
     'inputSubmit' => '<input type="{{type}}"{{attrs}}/>',

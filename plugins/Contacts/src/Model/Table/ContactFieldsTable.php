@@ -28,7 +28,11 @@ class ContactFieldsTable extends Table
         $this->setPrimaryKey('id');
 
         $this->addBehavior('Timestamp');
-        $this->addBehavior('MultiTranslatable', ['fields' => ['label']]);
+        $this->addBehavior('MultiTranslatable', ['fields' => [
+            'label',
+            'modified',
+            '_status'
+        ]]);
 
         $this->addBehavior('Sortable', [
             'scope' => 'contact_form_id'

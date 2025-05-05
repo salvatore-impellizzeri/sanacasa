@@ -33,7 +33,10 @@ class ShopProductsController extends AppController
             $brands = $this->ShopProducts->Brands->find('list')
                 ->order(['Brands.title' => 'ASC']);
 
-			$this->set(compact('shopCategories', 'brands'));
+            $shopTags = $this->ShopProducts->ShopTags->find('list')
+                ->order(['BranShopTagsds.title' => 'ASC']);
+
+			$this->set(compact('shopCategories', 'brands', 'shopTags'));
 
         }
 
@@ -44,7 +47,6 @@ class ShopProductsController extends AppController
 			$this->set(compact('vatRates'));
 
         }
-
         
     }
 
@@ -108,6 +110,11 @@ class ShopProductsController extends AppController
             'Attachments',
             
             'ShopCategories' => [
+                'queryBuilder' => function (Query $q) {
+                    return $q->order(['position' => 'ASC']);
+                }
+            ],
+            'ShopTags' => [
                 'queryBuilder' => function (Query $q) {
                     return $q->order(['position' => 'ASC']);
                 }

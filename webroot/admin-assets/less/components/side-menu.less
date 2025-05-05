@@ -25,6 +25,11 @@
     padding-top: 40px;
     overflow-y: auto;
     padding-bottom: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
     
     /* width */
     &::-webkit-scrollbar {
@@ -101,8 +106,7 @@
                 transition: 200ms ease-out;
             }
             .side-menu__submenu-wrapper {
-                max-height: 450px;
-                transition: 350ms ease-out;
+                grid-template-rows: 1fr;
             }
         }
     }
@@ -150,14 +154,15 @@
         height: 100%;
         padding: 0px 0 15px;
         margin: 0;
+        overflow: hidden;
         
         &-wrapper {
-            display: block;
+            display: grid;
             width: 100%;
-            max-height: 0;
             padding-left: 35px;
             overflow: hidden;
-            transition: 450ms ease-out;
+            transition: 450ms @easeOutQuad;
+            grid-template-rows: 0fr;
         }
         
         &__item {
@@ -172,10 +177,12 @@
             font-size: 0.95rem;
             &--parent{
                 text-transform: uppercase;
-                opacity: .5;
+                color: lighten(@primary, 10%);
                 font-size: 12px;
                 padding-top: 10px;
-                margin-left: -5px;
+                &:hover{
+                    color: lighten(@primary, 10%);
+                }
             }
         }
     }
