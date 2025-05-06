@@ -68,7 +68,7 @@
     </div>
 
     <!-- VALORI -->
-    <div class="pt-134">
+    <div class="pt-134 pb-176">
         <?= $this->element('title', [
             'label' => 'noi siamo sanacasa',
             'title' => 'I valori in cui crediamo',
@@ -111,7 +111,7 @@
     </div>
 
     <!-- RECENSIONI -->
-    <div class="bg-primary">
+    <div class="bg-primary pt-141 pb-141">
         <?= $this->element('title', [
             'label' => 'dicono di noi',
             'title' => 'Ascolta le esperienze di chi ci ha scelto',
@@ -153,7 +153,7 @@
                     <p>
                         <?= $rating['text'] ?>
                     </p>
-                    <div class="font-chillax fw-semibold font-20">
+                    <div class="font-chillax card__name fw-semibold font-20">
                         <?= $rating['name'] ?>
                     </div>
                </div>

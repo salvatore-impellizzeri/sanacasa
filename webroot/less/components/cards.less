@@ -30,8 +30,17 @@
     }
 
     &--white{
+        padding-left: clamp(18px, 41vw * @px2vw, 41px);
+        padding-right: clamp(18px, 41vw * @px2vw, 41px);
         .bg-white;
         color: @text-primary;
+        display: flex;
+        flex-direction: column;
+
+        .card__rating{
+            margin-bottom: 1em;
+            .font-19;
+        }
 
         .card__rating{
             display: flex;
@@ -42,6 +51,11 @@
         h3{
             .font-36;
             .fw-semibold;
+            color: @text-primary;
+        }
+
+        .card__name{
+            margin-top: auto;
         }
     }
 }
