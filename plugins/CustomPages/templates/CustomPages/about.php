@@ -64,7 +64,7 @@
             <div class="swiper-wrapper">
                 <?php foreach ($methods as $method) { ?>
                     <div class="swiper-slide">
-                        <?= $this->element('box-slider', [
+                        <?= $this->element('box', [
                             'num' => $method['num'],
                             'title' => $method['title'],
                             'text' => $method['text'],

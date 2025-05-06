@@ -1,4 +1,5 @@
 <div>
+    <!-- PRICES -->
     <div class="pt-h bg-secondary pb-168">
         <div class="container-xl m-auto">
             <?= $this->element('title', [
@@ -48,4 +49,24 @@
             </div>
         </div>
     </div>
+
+    <!-- SPIEGAZIONE -->
+    <div class="box box--img m-auto mt-307">
+        <div class="box--img__image">
+            <div class="box--img__img-container">
+                <img src="img/img4.png" alt="">
+            </div>
+        </div>
+        <div class="box--img__text text-center m-auto pt-83 pb-83">
+            <h2 class="fw-bold font-64">
+                Come funzionano?
+            </h2>
+            <p class="font-20">
+                In base alla tipologia e alla dimensione del tuo immobile, le pratiche edilizie assumono un valore e delle responsabilità civili e penali di grado diverso. I prezzi sono calibrati in base a questa differenza.
+            </p>
+        </div>
+    </div>
+
+    <!-- FORM -->
+    <?= $this->element('form'); ?>
 </div>
