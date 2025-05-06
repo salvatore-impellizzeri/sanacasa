@@ -51,7 +51,7 @@
     </div>
 
     <!-- SPIEGAZIONE -->
-    <div class="box box--img m-auto mt-307">
+    <div class="box box--img m-auto mt-307 mb-150">
         <div class="box--img__image">
             <div class="box--img__img-container">
                 <img src="img/img4.png" alt="">
@@ -64,6 +64,31 @@
             <p class="font-20">
                 In base alla tipologia e alla dimensione del tuo immobile, le pratiche edilizie assumono un valore e delle responsabilità civili e penali di grado diverso. I prezzi sono calibrati in base a questa differenza.
             </p>
+        </div>
+    </div>
+
+    <!-- SERVIZI -->
+    <div class="mb-176 container-xs m-auto">
+        <?= $this->element('title', [
+            'label' => 'servizi inclusi',
+            'title' => 'Il nostro pacchetto include tutti i servizi di cui avrai bisogno',
+            'extraClass' => "title--white text-center",
+        ]); ?>
+        <div class="pt-134">
+            <?= $this->element('img-text', [    
+                'img' => 'img/img5.png',
+                'label' => 'architetto',
+                'title' => "Architetto dedicato, esperto della situazione specifica del tuo immobile",
+                'text' => "Nel prezzo è incluso il contratto con un Architetto parnter di SANACASA, che risponderà a tutte le tue domande sulla regolarizzazione da intraprendere",
+                'extraClass' => 'mb-129 img-text--smaller'
+            ]); ?>
+            <?= $this->element('img-text', [    
+                'img' => 'img/img6.png',
+                'label' => 'adempimenti',
+                'title' => "Presentazione della pratica edilizia e tutte le altre scadenze",
+                'text' => "Il tuo Architetto preparerà la pratica edilizia in sanatoria e gli altri adempimenti necessari. In modo da mettere in regola il tuo immobile nel minor tempo possibile.",
+                'extraClass' => 'invert img-text--smaller'
+            ]); ?>
         </div>
     </div>
 
