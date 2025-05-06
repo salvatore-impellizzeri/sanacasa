@@ -22,7 +22,7 @@
                 'label' => 'il nostro metodo',
                 'title' => 'Crediamo che il primo passo per la riqualifica del patrimonio immobiliare italiano, sia la sua legittimazione. ',
                 'text' => "Ti diamo gli strumenti per raggiungere la conformità del tuo immobile. ",
-                'extraClass' => "title--white text-center",
+                'extraClass' => "title--white text-center mb-143",
             ]); ?>
         </div>
 
@@ -46,9 +46,21 @@
                     'text' => 'Un nostro tecnico partner della tua zona effettua un sopralluogo dettagliato per raccogliere tutte le informazioni necessarie sul tuo immobile.',
                     'img' => 'img/img3.png'
                 ],
+                [
+                    'num' => '05.',
+                    'title' => 'Sopralluogo e rilievo',
+                    'text' => 'Un nostro tecnico partner della tua zona effettua un sopralluogo dettagliato per raccogliere tutte le informazioni necessarie sul tuo immobile.',
+                    'img' => 'img/img4.png'
+                ],
+                [
+                    'num' => '06.',
+                    'title' => 'Sopralluogo e rilievo',
+                    'text' => 'Un nostro tecnico partner della tua zona effettua un sopralluogo dettagliato per raccogliere tutte le informazioni necessarie sul tuo immobile.',
+                    'img' => 'img/img3.png'
+                ],
             ]
         ?>
-        <div class="swiper swiper--methods">
+        <div class="swiper--methods">
             <div class="swiper-wrapper">
                 <?php foreach ($methods as $method) { ?>
                     <div class="swiper-slide">
@@ -160,4 +172,8 @@
             <?php } ?>
         </div>
     </div>
+
+    <!-- FORM -->
+    <?= $this->element('form'); ?>
+
 </div>
