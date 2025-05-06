@@ -67,6 +67,7 @@
         </div>
     </div>
 
+    <!-- VALORI -->
     <div class="pt-134">
         <?= $this->element('title', [
             'label' => 'noi siamo sanacasa',
@@ -104,6 +105,57 @@
                     <p>
                         <?= $value['text'] ?>
                     </p>
+               </div>
+            <?php } ?>
+        </div>
+    </div>
+
+    <!-- RECENSIONI -->
+    <div class="bg-primary">
+        <?= $this->element('title', [
+            'label' => 'dicono di noi',
+            'title' => 'Ascolta le esperienze di chi ci ha scelto',
+            'extraClass' => "title--primary text-center mb-105",
+        ]); ?>
+        <?php
+            $ratings = [
+                [
+                    'rating' => 5,
+                    'title' => '“Tutto in regola e senza stress!”',
+                    'text' => "Ero preoccupata per alcune difformità nel mio appartamento, ma SANACASA ha reso tutto incredibilmente semplice. La piattaforma è intuitiva e il tecnico che mi ha seguito è stato super disponibile e competente. Pratica completata senza intoppi!",
+                    'name' => 'Sara S.'
+                ],
+                [
+                    'rating' => 4,
+                    'title' => '"Servizio efficiente e professionale"',
+                    'text' => "Ho utilizzato SANACASA per la regolarizzazione del garage e sono rimasto molto soddisfatto. Il sopralluogo è stato rapido, la documentazione chiara e l'assistenza costante. Un modo comodo e affidabile per mettersi in regola.",
+                    'name' => 'Enrico V.'
+                ],
+                [
+                    'rating' => 4,
+                    'title' => '“Consigli utili e iter trasparente”',
+                    'text' => "Oltre alla regolarizzazione vera e propria, ho apprezzato molto i consigli ricevuti dal team di SANACASA su come rendere il mio immobile più commerciabile. L'iter della pratica è stato sempre chiaro e monitorabile online. Ottima esperienza!",
+                    'name' => 'Brian B.'
+                ]
+            ]
+        ?>
+        <div class="container-cards m-auto">
+            <?php foreach ($ratings as $rating) { ?>
+               <div class="card card--white">
+                    <div class="card__rating">
+                        <?php for ($i = 0; $i < $rating['rating']; $i++) { ?>
+                            <?= $this->Frontend->svg('icons/star.svg'); ?>
+                        <?php } ?>
+                    </div>
+                    <h3 class="font-chillax">
+                        <?= $rating['title'] ?>
+                    </h3>
+                    <p>
+                        <?= $rating['text'] ?>
+                    </p>
+                    <div class="font-chillax fw-semibold font-20">
+                        <?= $rating['name'] ?>
+                    </div>
                </div>
             <?php } ?>
         </div>

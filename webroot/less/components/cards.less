@@ -2,7 +2,7 @@
     .br-50;
     width: clamp(120px, 440vw * @px2vw, 440px);
     height: clamp(120px, 551vw * @px2vw, 551px);
-    padding: clamp(20px, 83vw * @px2vw, 83px) clamp(15px, 35vw * @px2vw, 35px);
+    padding: clamp(20px, 83vw * @px2vw, 83px) clamp(15px, 57vw * @px2vw, 57px);
     .bg-primary;
     text-align: center;
 
@@ -30,6 +30,18 @@
     }
 
     &--white{
+        .bg-white;
+        color: @text-primary;
 
+        .card__rating{
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+        }
+
+        h3{
+            .font-36;
+            .fw-semibold;
+        }
     }
 }
