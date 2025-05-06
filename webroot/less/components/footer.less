@@ -41,7 +41,7 @@
 
     &__legal{
         display: flex;
-        gap: 10px;
+        gap: 30px;
         color: black;
 
         span{
@@ -49,12 +49,10 @@
         }
     }
 
-    &__menu{
-        .font-20;
-        margin-bottom: 1.3em;
-    }
+
 
     &__links{
+        width: clamp(130px, 203vw * @px2vw, 203px);
 
         .cta{
             color: @white;
@@ -63,13 +61,23 @@
 
     .menu{
         color: @text-primary;
-        display: flex;
-        justify-content: space-between;
-        gap: clamp(10px, 30vw * @px2vw, 30px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: clamp(10px, 20vw * @px2vw, 20px);
 
         @media screen and (max-width: @tablet-m) {
             justify-content: flex-start;
         }
+    }
+
+    .policy{
+        display: flex;
+        gap: clamp(10px, 30vw * @px2vw, 30px);
+    }
+
+    &__menu{
+        .font-20;
+        margin-bottom: 1.3em;
     }
 
     &__img{
