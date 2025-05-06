@@ -1,0 +1,37 @@
+.box-slider{
+    padding: 0 clamp(24px, 69vw * @px2vw, 69px);
+    width: clamp(280px, 839vw * @px2vw, 839px);
+    height: clamp(150px, 419vw * @px2vw, 419px);
+    .br-50;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__text{
+        width: clamp(150px, 387vw * @px2vw, 387px);
+        color: @light-text-color;
+
+        h3{
+            width: clamp(102px, 302vw * @px2vw, 302px);
+            margin-bottom: 0.6em;
+        }
+    }
+
+    &__num{
+        margin-bottom: 0.5em;
+        opacity: 50%;
+    }
+
+    &__img{
+        width: clamp(130px, 458vw * @px2vw, 458px);
+        height: clamp(200px, 511vw * @px2vw, 511px);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        img{
+            object-fit: contain;
+            height: 100%;
+        }
+    }
+}

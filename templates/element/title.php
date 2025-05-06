@@ -5,4 +5,7 @@
     <h2 class="title-secondary">
         <?= $title ?>
     </h2>
+    <p class="font-20">
+        <?= $text ?>
+    </p>
 </div>
