@@ -5,7 +5,9 @@
     <h2 class="title-secondary">
         <?= $title ?>
     </h2>
-    <p class="font-20">
-        <?= $text ?>
-    </p>
+    <?php if(isset($text)) { ?>
+        <p class="font-20">
+            <?= $text ?>
+        </p>
+    <?php } ?>
 </div>

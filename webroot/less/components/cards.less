@@ -1,0 +1,35 @@
+.card{
+    .br-50;
+    width: clamp(120px, 440vw * @px2vw, 440px);
+    height: clamp(120px, 551vw * @px2vw, 551px);
+    padding: clamp(20px, 83vw * @px2vw, 83px) clamp(15px, 35vw * @px2vw, 35px);
+    .bg-primary;
+    text-align: center;
+
+    &__icon{
+        width: clamp(30px, 90vw * @px2vw, 90px);
+        height: clamp(30px, 90vw * @px2vw, 90px);
+        background-color: @white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.16em;
+        .font-24;
+    }
+
+    h3{
+        .fw-bold;
+        color: @text-secondary;
+        .font-48;
+        margin-bottom: 0.68em;
+    }
+
+    p{
+        .font-18;
+    }
+
+    &--white{
+
+    }
+}

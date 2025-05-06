@@ -287,3 +287,16 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf);
+
+// SWIPER METHODS
+
+const swiperMethods = new Swiper('.swiper--methods', {
+	loop: true,
+	slidesPerView: 2.2,
+	spaceBetween: 40,
+
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},	
+});
