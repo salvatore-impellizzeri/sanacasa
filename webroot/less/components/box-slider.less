@@ -1,4 +1,4 @@
-.box-slider{
+.box{
     padding: 0 clamp(24px, 69vw * @px2vw, 69px);
     width: clamp(280px, 839vw * @px2vw, 839px);
     height: clamp(150px, 419vw * @px2vw, 419px);
@@ -34,4 +34,25 @@
             height: 100%;
         }
     }
+
+    &--price{
+        color: @light-text-color;
+        .bg-purple;
+        .font-64;
+        padding: 0.89em 1em;
+        height: clamp(150px, 355vw * @px2vw, 355px);
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        &__lower{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+}
+
+.boxes{
+    display: flex;
+    gap: clamp(20px, 53vw * @px2vw, 53px)
 }
