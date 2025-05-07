@@ -25,10 +25,12 @@
         label{
             margin: 0;
             color: @text-secondary;
+            margin-bottom: 1.05em;
         }
 
         h3{
             color: @text-primary;
+            margin-bottom: 0.80em;
         }
     }
 
@@ -80,6 +82,12 @@
 
         .img-text__text{
             width: clamp(180px, 433vw * @px2vw, 433px);
+        }
+    }
+
+    &--grayscale{
+        .img-text__img{
+            filter: grayscale(100%);
         }
     }
 }
