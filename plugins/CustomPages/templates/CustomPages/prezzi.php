@@ -92,6 +92,66 @@
         </div>
     </div>
 
+    <!-- EXTRA -->
+    <div class="container-l m-auto pb-150">
+        <?= $this->element('title', [
+            'label' => 'extra',
+            'title' => 'Servizi aggiuntivi su richiesta',
+            'extraClass' => "title--primary text-center mb-96",
+        ]); ?>
+        <?php
+            $extras = [
+                [
+                    'title' => 'Visure storiche e planimetrie catastali',
+                    'text' => 'Per chi non ne avesse disponibilità. In 48 ore dalla firma dell’incarico, effettuiamo le necessarie visure attuali e storiche in Agenzia delle Entrate e otteniamo le planimetrie catastali utili a comprendere lo status del tuo immobile ',
+                    'price' => '',
+                    'included' => true
+                ],
+                [
+                    'title' => 'Accesso agli atti amministrativi',
+                    'text' => 'Per i proprietari che non ne fossero già in possesso. Effettuiamo le necessarie verifiche e ricerche dei titoli edilizi che hanno legittimato il tuo immobile e ci occupiamo della richiesta di accesso agli atti nel tuo Comune di appartenenza. ',
+                    'price' => '100',
+                    'included' => false
+                ],
+                [
+                    'title' => 'Certificazione di conformità',
+                    'text' => 'Per gli immobili oggetto di compravendita che hanno bisogno delle attestazioni di conformità edilizia-urbanistica e catastale richieste dai notai in sede di rogito.',
+                    'price' => '150',
+                    'included' => false
+                ],
+            ]
+        ?>
+        <div class="card--flex mb-117">
+            <?php foreach ($extras as $extra) { ?>
+                <div class="card card--extra">
+                    <h3>
+                        <?= $extra['title'] ?>
+                    </h3>
+                    <p>
+                        <?= $extra['text'] ?>
+                    </p>
+                    <div class="card--extra__price fw-medium">
+                        <div>
+                            <?php if ($extra['included']) { ?>
+                                incluso nel pacchetto
+                            <?php } else { ?>
+                                <span class="font-64">€ <?= $extra['price'] ?></span> / unità
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+        <div class="text-center">
+            <?= $this->element('cta', [
+                'label' => 'Dettaglio servizi',
+                'url' => '#',
+                'extraClass' => 'cta--secondary'
+            ]); ?>
+        </div>
+    </div>
+    
+
     <!-- FORM -->
     <?= $this->element('form'); ?>
 </div>

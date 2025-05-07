@@ -58,4 +58,26 @@
             margin-top: auto;
         }
     }
+
+    &--flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--extra{
+        text-align: left;
+        width: clamp(300px, 487vw * @px2vw, 487px);
+        height: clamp(350px, 511vw * @px2vw, 511px);
+        display: flex;
+        flex-direction: column;
+        .font-48;
+        padding: 1.45em 0.7em;
+
+        &__price{
+            .font-18;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: auto;
+        }
+    }
 }
