@@ -151,7 +151,7 @@
         </div>
     </div>
     
-    <!-- DETAILS -->
+    <!-- DETAILS PACKAGE -->
     <div class="bg-secondary pt-168 pb-168">
         <div class="container-details m-auto">
             <?= $this->element('title', [
@@ -215,6 +215,48 @@
         </div>
     </div>
 
+    <!-- DETAILS SERVICE -->
+    <div class="pt-150 pb-150 container-m m-auto">
+        <?= $this->element('title', [
+            'label' => 'dettaglio prezzi',
+            'title' => 'Dettagli dei servizi',
+            'text' => 'Approfondisci nel dettaglio i servizi inclusi nei nostri pacchetti',
+            'extraClass' => "title--primary text-center mb-83",
+        ]); ?>
+        <div class="container-flex gap-37">
+            <?= $this->element('list-info', [
+                'title' => 'Inclusi nel pacchetto',
+                'icon' => 'icons/icon7.svg',
+                'list' => [
+                    "<strong>Consulenza</strong> specifica dedicata",
+                    "<strong>Visura planimetrica</strong> catastale",
+                    "Visure catastali <strong>storiche e attuali</strong>",
+                    "Verifica di <strong>conformità edilizia e catastale</strong> (se propedeutica ad una regolarizzazione)",
+                    "<strong>Sopralluoghi</strong> tecnici di rilievo dell'immobile e restituzione grafica",
+                    "Elaborazione e Presentazione della <strong>pratica edilizia di sanatoria</strong> (C.I.L.A. - S.C.I.A. - P.D.C.)",
+                    "<strong>Variazione</strong> e <strong>aggiornamento</strong> Catastale (DOCFA)",
+                ],
+                'extraClass' => 'list-info--primary'
+            ]); ?>
+            <?= $this->element('list-info', [
+                'title' => 'Aggiuntivi',
+                'icon' => 'icons/plus.svg',
+                'list' => [
+                    "Accesso agli <strong>atti amministrativi</strong>",
+                    "Accertamenti di <strong>Compatibilità Paesaggistica e Ambientale</strong> (se in presenza di specifico Vincolo)",
+                    "Verifica di <strong>conformità edilizia e catastale</strong> (se indipendente da una regolarizzazione",
+                    "<strong>Certificazione</strong> di Conformità Edilizia e Catastale",
+                    "Cambi d'Uso, <strong>Frazionamenti</strong> e <strong>Fusioni</strong>",
+                    "<strong>Progettazione integrata</strong> ristrutturazioni e nuovo",
+                    "Direzione <strong>lavori</strong> e <strong>sicurezza</strong>",
+                    "<strong>Perizie</strong> e <strong>stime</strong>",
+                    "<strong>Consulenza</strong> energetica e strutturale",
+                    "Attestato di <strong>Presentazione Energetica</strong> (A.P.E.)"
+                ],
+                'extraClass' => 'list-info--secondary'
+            ]); ?>
+        </div>
+    </div>
 
     <!-- FORM -->
     <?= $this->element('form'); ?>
