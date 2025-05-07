@@ -72,9 +72,9 @@
         <?= $this->element('title', [
             'label' => 'servizi inclusi',
             'title' => 'Il nostro pacchetto include tutti i servizi di cui avrai bisogno',
-            'extraClass' => "title--white text-center",
+            'extraClass' => "title--primary text-center mb-134",
         ]); ?>
-        <div class="pt-134">
+        <div>
             <?= $this->element('img-text', [    
                 'img' => 'img/img5.png',
                 'label' => 'architetto',
@@ -151,6 +151,70 @@
         </div>
     </div>
     
+    <!-- DETAILS -->
+    <div class="bg-secondary pt-168 pb-168">
+        <div class="container-details m-auto">
+            <?= $this->element('title', [
+                'label' => 'dettaglio prezzi',
+                'title' => 'Dettagli dei pacchetti',
+                'text' => 'Prezzi a unità immobiliare per regolazizzazione di difformità interne',
+                'extraClass' => "title--white text-center mb-117",
+            ]); ?>
+            <?= $this->element('list-container', [
+                'packages' => [
+                    [
+                        'typology' => 'Appartamenti, uffici, negozi fino a 60mq',
+                        'price_1' => '299',
+                        'price_2' => '899',
+                    ],
+                    [
+                        'typology' => 'Appartamenti, uffici, negozi tra 60 e 100mq',
+                        'price_1' => '399',
+                        'price_2' => '999',
+                    ],
+                    [
+                        'typology' => 'Appartamenti, uffici, negozi tra 100 e 300mq',
+                        'price_1' => '499',
+                        'price_2' => '1099',
+                    ],
+                    [
+                        'typology' => 'Appartamenti, uffici, negozi tra 300 e 500mq',
+                        'price_1' => '599',
+                        'price_2' => '1199',
+                    ],
+                    [
+                        'typology' => 'Appartamenti, uffici, negozi oltre a 500mq',
+                        'price_1' => '699', 
+                        'price_2' => '1299',
+                    ],
+                    [
+                        'typology' => 'Accessori a servizio delle unità (es. cantina, garage)',
+                        'price_1' => '+100',
+                        'price_2' => '+200',
+                    ],
+                    [
+                        'typology' => 'Condomini (parti comuni e/o private) ',
+                    ], 
+                ],
+                'labels' => [
+                    [
+                        'icon' => 'icons/icon4.svg',
+                        'name' => 'Tipologia e dimensione immobile'
+                    ],
+                    [
+                        'icon' => 'icons/icon5.svg',
+                        'name' => 'Regolarizzazione catastale'
+                    ],
+                    [
+                        'icon' => 'icons/icon6.svg',
+                        'name' => 'Sanatoria edilizia-urbanistica'
+                    ]
+                ]
+
+            ]); ?>
+        </div>
+    </div>
+
 
     <!-- FORM -->
     <?= $this->element('form'); ?>

@@ -123,7 +123,7 @@
     </div>
 
     <!-- RECENSIONI -->
-    <div class="bg-primary pt-141 pb-141">
+    <div class="bg-primary pt-141 pb-141 top-shadow">
         <?= $this->element('title', [
             'label' => 'dicono di noi',
             'title' => 'Ascolta le esperienze di chi ci ha scelto',
