@@ -1,12 +1,14 @@
 <div class="form pb-182 pt-182 bg-gradient-blue">
-    <div class="m-auto container-form">
+    <div class="m-auto container-form font-20">
         <?= $this->element('title', [
-            'label' => 'inizia ora',
-            'title' => 'Parla con un nostro consulente tecnico e scopri come gestire la tua sanatoria edilizia.',
-            'extraClass' => 'text-center title--white mb-54'
+            'label' => $label,
+            'title' => $title,
+            'extraClass' => 'text-center title--white'
         ]); ?>
-    </div>
-    <div class="form__content">
-        <!-- FORM -->
+        <div class="form__content">
+            <?= $this->element('Contacts.contact-form', [
+                'id' => 1
+            ]) ?>
+        </div>
     </div>
 </div>

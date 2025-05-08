@@ -47,5 +47,8 @@
 
     </div>
 
-    <?= $this->element('form'); ?>
+    <?= $this->element('form', [
+        'label' => 'diventa partner',
+        'title' => 'Parla con un nostro consulente tecnico e scopri come diventare partner di SANACASA'
+    ]); ?>
 </div>

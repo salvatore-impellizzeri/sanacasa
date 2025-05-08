@@ -1,5 +1,11 @@
 .contact-form {
-    
+    padding-top: clamp(30px, 91vw * @px2vw, 91px);
+
+    .button{
+        background-color: @bg-secondary;
+        display: flex;
+        justify-self: center;
+    }
 
     &--1{
         .contact-form__inputs{
@@ -13,21 +19,21 @@
         }
 
         @media screen and (min-width: (@tablet-s + 1)) {
-            .input{
-                &--1, &--2, &--3{
-                    grid-column-start: 1;
-                }
+            // .input{
+            //     &--1, &--2, &--3{
+            //         grid-column-start: 1;
+            //     }
 
-                &--4{
-                    grid-column-start: 2;
-                    grid-row-start: 1;
-                    grid-row-end: span 3;
-                }
+            //     &--4{
+            //         grid-column-start: 2;
+            //         grid-row-start: 1;
+            //         grid-row-end: span 3;
+            //     }
 
-                &--5{
-                    grid-column-end: span 2;
-                }
-            } 
+            //     &--5{
+            //         grid-column-end: span 2;
+            //     }
+            // } 
         }
         .textarea {
             display: flex;
