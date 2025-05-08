@@ -110,6 +110,14 @@
         display: flex;
         align-items: center;
         gap: clamp(15px, 33.48vw * @px2vw, 33.48px);
+
+        .current-page{
+            .br-50;
+            background-color: @bg-primary;
+            .fw-semibold;
+            color: @text-secondary;
+            padding: 0 0.89em;
+        }
         
         &__item{
             position: relative;
@@ -136,8 +144,8 @@
 
         &__link{
             color: inherit;
-            height: 46px;
-            line-height: 46px;
+            height: 56px;
+            line-height: 56px;
             white-space: nowrap;
             display: block;
 
