@@ -6,7 +6,7 @@ $homeLink = ACTIVE_LANGUAGE == DEFAULT_LANGUAGE ? '/' : '/'.ACTIVE_LANGUAGE.'/';
 $languages = Configure::read('Setup.languages');
 ?>
 
-<header class="header">
+<header class="header <?= $extraClass ?? '' ?>">
     <div class="header__inner">
         <a href="<?= $homeLink ?>" class="header__logo">
             <?= $this->Frontend->svg('logo.svg') ?>

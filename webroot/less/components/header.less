@@ -4,8 +4,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background: transparent;
     padding: 0 clamp(10px, 40vw * @px2vw, 40px);
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -13,6 +13,7 @@
     font-size: 14px;
     z-index: 500;
     transition: 300ms @easeOutQuad;
+    box-shadow: 4px 4px 30.3px rgba(86, 76, 255, 0.15);
 
     &__inner{
         width: clamp(350px, 1249vw * @px2vw, 1249px);
@@ -29,7 +30,7 @@
     }
 
     .body--light-header:not(.body--scroll) &{
-        color: @light-text-color;
+        // color: @light-text-color;
     }
 
     .body--scroll &{
@@ -114,7 +115,7 @@
             position: relative;
             .font-19;
             .fw-medium;
-            color: @light-text-color;
+            color: @text-primary;
             min-width: 67px;
             text-align: center;
 
@@ -181,6 +182,23 @@
                 line-height: 40px;
                 color: @text-color;
             }
+        }
+    }
+}
+
+.header--secondary{
+    background: transparent;
+    box-shadow: none;
+
+    .menu__item{
+        color: @white;
+    }
+
+    .body--light-header:not(.body--scroll) &{
+        background-color: rgba(255, 255, 255, 0.9);
+
+        .menu__item{
+            color: @light-text-color;
         }
     }
 }

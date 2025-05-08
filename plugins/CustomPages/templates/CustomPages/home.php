@@ -1,3 +1,7 @@
+<?php 
+    $this->assign('headerClass', 'header--secondary');
+?>
+
 <div class="home">
 
     <!-- HERO -->
