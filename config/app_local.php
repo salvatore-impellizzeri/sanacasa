@@ -27,10 +27,10 @@ return [
      */
     'Datasources' => [
         'default' => [
-            'host' => 'dev.webmotion.it',
-            'username' => 'sanacasa-wm',
-            'password' => 'mNimNi1473j@1473j@',
-            'database' => 'sanacasa_webmotion',
+            'host' => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'sanacasa',
             'url' => env('DATABASE_URL', null),
 			'log' => false, // da abilitare per loggare le query nel queriesLog
 			'quoteIdentifiers' => false, // serve a quotare parole riservate di mySQL usate come campi del database. Evitare di usarle e non attivarlo se possibile perché riduce performance
