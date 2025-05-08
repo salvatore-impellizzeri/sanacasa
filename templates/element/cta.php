@@ -3,7 +3,7 @@
 <?php if (!empty($url)) : ?>
     <a class="cta <?= $extraClass ?? '' ?>" href="<?= $url ?>">
         <span class="cta__label">
-            <?= $label ?>
+            <?= $label ?> <?= isset($svgFooter) ? $this->Frontend->svg($svgFooter) : null ?>
         </span>
         <?php if (!empty($icon)) : ?>
             <span class="cta__icon">

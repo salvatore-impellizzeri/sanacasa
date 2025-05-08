@@ -5,15 +5,18 @@
                 SANACASA non è uno studio di architettura. È un’agenzia che ti permette di gestire le regolarizzazioni del tuo immobile online, con un portale e un servizio di assistenza tecnica dedicata. Tutte le attività riservate sono svolte dagli Architetti/Ingegneri/Geometri partner di SANACASA, iscritti ai relativi Albi. 
             </p>
             <?= $this->element('cta', [
-                'label' => 'Review us on Trustpilot',
+                'label' => 'Review us on',
+                'svgFooter' => 'icons/trustpilot.svg',
                 'url' => '#',
-                'extraClass' => 'cta--trustpilot'
+                'extraClass' => 'cta--labelSvg'
             ]); ?>
             <div class="footer__legal">
                 <ul class="menu policy">
                     <li><?= $this->Frontend->seolink(__d('policies', 'Privacy policy'), '/policies/view/1'); ?></li>
                     <li><?= $this->Frontend->seolink(__d('policies', 'Cookie policy'), '/policies/view/2'); ?></li>
                     <li><span id="cookie_reload"><?php echo __d('policies', 'manage cookies'); ?></span></li>
+                    <li><a href="<?= $this->Frontend->url('#') ?>">Credits</a></li>
+                    <li><strong><a href="<?= $this->Frontend->url('#') ?>">Contatti</a></strong></li>
                 </ul>
             </div>
         </div>
