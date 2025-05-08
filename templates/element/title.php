@@ -1,4 +1,4 @@
-<div class="title <?= $extraClass ?>">
+<div class="title <?= $extraClass ?> fadeFromBottom-20" data-animated>
     <label class="font-chillax font-16 fw-medium">
         <?= $label ?>
     </label>

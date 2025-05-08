@@ -7,7 +7,7 @@
     <!-- HERO -->
     <div class="home__hero">
         <video src="img/video/home-video.mp4" autoplay loop muted playsinline></video>
-        <div class="home__hero__content">
+        <div class="home__hero__content" >
             <div class="home__hero__text">
                 <?= $this->element('title', [
                     'label' => 'la sartoria di casa, semplice',
@@ -35,7 +35,7 @@
     <div class="home__info pt-150 pb-150 container-s m-auto">
         <?= $this->element('title', [
             'label' => 'come funziona',
-            'title' => 'Consulenti e tecnici specializzati a tua disposizione, tutte le volte che hai bisogno ',
+            'title' => 'Consulenti e tecnici specializzati a tua disposizione, tutte le volte che hai bisogno',
             'extraClass' => 'text-center title--primary mb-96'
         ]); ?>
         <div class="home__info__content">
@@ -84,5 +84,8 @@
     </div>
 
     <!-- FORM -->
-    <?= $this->element('form'); ?>
+    <?= $this->element('form', [
+        'title' => 'Parla con un nostro consulente tecnico e scopri come gestire la tua sanatoria edilizia.',
+        'label' => 'inizia ora',
+    ]); ?>
 </div>

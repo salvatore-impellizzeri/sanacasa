@@ -42,7 +42,11 @@ class ObserverAnimation {
       entries.forEach((entry) => {
         let posClass = this.visibilityChanged(entry.isIntersecting, entry);
 
-        this.$el.className = this.currClass + " " + posClass;
+        if (posClass === "is-in") {
+          this.$el.className = this.currClass + " " + posClass;
+          observer.unobserve(this.$el); 
+        }
+        
       });
     }, options);
 

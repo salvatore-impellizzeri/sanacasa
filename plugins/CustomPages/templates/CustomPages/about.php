@@ -11,7 +11,7 @@
             ]); ?>
         </div>
         <div class="about__hero__img m-auto">
-            <img src="img/About.png" alt="About Image">
+            <img src="img/About.png" alt="About Image" class="fadeFromBottom-about" data-animated>
         </div>
     </div>
     
@@ -174,6 +174,9 @@
     </div>
 
     <!-- FORM -->
-    <?= $this->element('form'); ?>
+    <?= $this->element('form', [
+        'title' => 'Parla con un nostro consulente tecnico e scopri come gestire la tua sanatoria edilizia.',
+        'label' => 'inizia ora',
+    ]); ?>
 
 </div>

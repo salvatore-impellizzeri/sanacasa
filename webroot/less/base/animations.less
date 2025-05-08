@@ -86,3 +86,136 @@
 .page-text-fancyimages--left > .page-text-fancyimages__content.is-in {
   animation: slideLeft 1.1s @easeOutSine forwards;
 }
+
+//CUSTOM ANIMATION
+
+@keyframes fadeFromTop-20 {
+  0%{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeFromTop-20{
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fadeFromTop-20.is-in{
+  animation: fadeFromTop-20 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromBottom-20 {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeFromBottom-20{
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fadeFromBottom-20.is-in{
+  animation: fadeFromBottom-20 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromBottom-20 {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeFromBottom-20{
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fadeFromBottom-20.is-in{
+  animation: fadeFromBottom-20 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromLeft-40 {
+  0%{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeFromLeft-40{
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.fadeFromLeft-40.is-in{
+  animation: fadeFromLeft-40 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromRight-40 {
+  0%{
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeFromRight-40{
+  opacity: 0;
+  transform: translateX(40px);
+}
+
+.fadeFromRight-40.is-in{
+  animation: fadeFromRight-40 0.5s ease-in-out forwards;
+}
+
+
+
+@keyframes fadeFromBottom-about {
+  0%{
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeFromBottom-about{
+  opacity: 0;
+  transform: translateY(40%);
+}
+
+.fadeFromBottom-about.is-in{
+  animation: fadeFromBottom-about 1s ease-in-out forwards;
+}
+
