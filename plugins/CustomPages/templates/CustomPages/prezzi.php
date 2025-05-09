@@ -7,7 +7,7 @@
                 'title' => 'Scegli il servizio in <br> base alla tua esigenza',
                 'extraClass' => "title--white text-center mb-105",
             ]); ?>
-            <?php 
+            <?php   
                 $prices = [
                     [
                         'type' => "Regolarizzazione <br> catastale",

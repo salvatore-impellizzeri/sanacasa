@@ -65,7 +65,6 @@
         grid-template-columns: 2fr 1fr;
         gap: clamp(10px, 20vw * @px2vw, 20px);
 
-
         @media screen and (max-width: @tablet-m) {
             justify-content: flex-start;
         }
@@ -73,8 +72,9 @@
 
     .policy{
         display: flex;
-        gap: clamp(5px, 15vw * @px2vw, 15px);
+        gap: clamp(10px, 15vw * @px2vw, 15px);
         color: rgba(0, 0, 0, 0.7);
+        flex-wrap: wrap;
     }
 
     #cookie_reload{

@@ -4,9 +4,10 @@
         position: relative;
         padding-bottom: 6.46em;
         .font-62;
+        overflow: hidden;
 
         &__img{
-            width: clamp(300px, 1776vw * @px2vw, 1776px);
+            width: clamp(500px, 1776vw * @px2vw, 1776px);
             position: absolute;
             bottom: 0;
             left: 50%;
@@ -16,6 +17,7 @@
     }
 
     .swiper-wrapper{
+        overflow: hidden;
         display: flex;
         gap: clamp(20px, 53vw * @px2vw, 53px);
     }
@@ -23,5 +25,9 @@
     .container-cards{
         display: flex;
         gap: clamp(20px, 42vw * @px2vw, 42px);
+
+        @media screen and (max-width: @tablet-l) {
+            flex-wrap: wrap;
+        }
     }
 }

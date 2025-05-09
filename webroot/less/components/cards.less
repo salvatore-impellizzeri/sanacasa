@@ -1,13 +1,13 @@
 .card{
     .br-50;
-    height: clamp(120px, 551vw * @px2vw, 551px);
     padding: clamp(20px, 83vw * @px2vw, 83px) clamp(15px, 57vw * @px2vw, 57px);
     .bg-primary;
     text-align: center;
+    width: 100%;
 
     &__icon{
-        width: clamp(30px, 90vw * @px2vw, 90px);
-        height: clamp(30px, 90vw * @px2vw, 90px);
+        width: clamp(40px, 90vw * @px2vw, 90px);
+        height: clamp(40px, 90vw * @px2vw, 90px);
         background-color: @white;
         border-radius: 50%;
         display: flex;
@@ -15,6 +15,12 @@
         justify-content: center;
         margin: 0 auto 1.16em;
         .font-24;
+
+        svg {
+            width: 60%; 
+            height: 60%;
+            object-fit: contain;
+          }
     }
 
     h3{
@@ -39,12 +45,14 @@
         .card__rating{
             margin-bottom: 1em;
             .font-19;
-        }
-
-        .card__rating{
             display: flex;
             gap: 4px;
             justify-content: center;
+            
+            svg{
+                width: 1.5em;
+                height: 1.5em;
+            }
         }
 
         h3{

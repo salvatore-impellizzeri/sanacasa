@@ -1,11 +1,19 @@
 .box{
     padding: 0 clamp(24px, 69vw * @px2vw, 69px);
-    width: clamp(280px, 839vw * @px2vw, 839px);
-    height: clamp(150px, 419vw * @px2vw, 419px);
+    width: 100%;
+    height: clamp(220px, 419vw * @px2vw, 419px);
     .br-50;
     position: relative;
     display: flex;
     align-items: center;
+
+    @media screen and(max-width: @tablet-m) {
+        width: 75%;
+    }
+
+    @media screen and (max-width: @tablet-s) {
+        width: 100%;
+    }
 
     &__text{
         width: clamp(150px, 387vw * @px2vw, 387px);
@@ -40,14 +48,24 @@
         .bg-purple;
         .font-64;
         padding: 0.89em 1em;
-        height: clamp(150px, 355vw * @px2vw, 355px);
+        height: clamp(200px, 355vw * @px2vw, 355px);
         display: grid;
         grid-template-columns: 1fr;
+
+        @media screen and (max-width: @mobile-l) {
+            height: 250px;
+        }
         
         &__lower{
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+
+            @media screen and (max-width: @mobile-l) {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
         }
     }
 
@@ -98,4 +116,9 @@
 .boxes{
     display: flex;
     gap: clamp(20px, 53vw * @px2vw, 53px);
+
+    @media screen and (max-width: @tablet-m) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

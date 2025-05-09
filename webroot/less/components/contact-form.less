@@ -11,10 +11,10 @@
         .contact-form__inputs{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            column-gap: clamp(10px, 40vw*@px2vw, 40px);
+            column-gap: clamp(10px, 40vw * @px2vw, 40px);
 
-            @media screen and (max-width: @tablet-s) {
-                grid-template-columns: 1fr;
+            @media screen and (max-width: @tablet-l) {
+                display: block;
             }
         }
 

@@ -134,6 +134,8 @@ textarea {
 
 .radio,
 .checkbox {
+    height: 55px;
+
     label {
         position: relative;
         cursor: pointer;
@@ -235,5 +237,12 @@ textarea {
     a {
         color: inherit;
         text-decoration: underline;
+    }
+}
+
+
+.form__content{
+    @media screen and (max-width: @tablet-m) {
+        padding-top: 30px;
     }
 }
