@@ -109,4 +109,12 @@ video {
 .grid-cols-3{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: @tablet-m) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: @mobile-l) {
+    grid-template-columns: 1fr;
+  }
 }
