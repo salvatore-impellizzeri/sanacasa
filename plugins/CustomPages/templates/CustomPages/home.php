@@ -20,12 +20,12 @@
                 <?= $this->element('cta', [
                     'label' => 'Come funziona',
                     'url' => '#',
-                    'extraClass' => 'cta--secondary'
+                    'extraClass' => 'cta--secondary fadeFromLeft-40'
                 ]); ?>
                 <?= $this->element('cta', [
                     'label' => 'Parla con noi',
                     'url' => '#',
-                    'extraClass' => 'cta--primary'
+                    'extraClass' => 'cta--primary fadeFromRight-40'
                 ]); ?>
             </div>
         </div>
@@ -57,7 +57,7 @@
         <?= $this->element('cta', [
             'label' => 'Scopri di più',
             'url' => '#',
-            'extraClass' => 'cta--unique'
+            'extraClass' => 'cta--unique fadeFromBottom-20'
         ]); ?>
     </div>
 

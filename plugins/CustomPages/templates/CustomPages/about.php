@@ -60,7 +60,7 @@
                 ],
             ]
         ?>
-        <div class="swiper--methods">
+        <div class="swiper--methods fadeFromRight-40" data-animated>
             <div class="swiper-wrapper">
                 <?php foreach ($methods as $method) { ?>
                     <div class="swiper-slide">
@@ -107,7 +107,7 @@
         ?>
         <div class="container-cards m-auto">
             <?php foreach ($values as $value) { ?>
-               <div class="card">
+               <div class="card rotateCard" data-animated>
                     <div class="card__icon">
                         <?= $this->Frontend->svg($value['icon']); ?>
                     </div>     
@@ -153,7 +153,7 @@
         ?>
         <div class="container-cards m-auto">
             <?php foreach ($ratings as $rating) { ?>
-               <div class="card card--white">
+               <div class="card card--white rotateCard" data-animated>
                     <div class="card__rating">
                         <?php for ($i = 0; $i < $rating['rating']; $i++) { ?>
                             <?= $this->Frontend->svg('icons/star.svg'); ?>

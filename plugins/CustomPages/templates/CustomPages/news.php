@@ -65,7 +65,7 @@
         ?>
         <div class="grid-cols-3 container-xl m-auto gap-37 gap-y-62 mb-96">
             <?php foreach ($articles as $article) { ?>
-                <a href="<?= $this->Frontend->url($article['url']);?>" class="card card--articles">
+                <a href="<?= $this->Frontend->url($article['url']);?>" class="card card--articles fadeFromLeft-40" data-animated>
                     <div class="card--articles__img">
                         <img src="<?= $article['img'] ?>" alt="Immagine Articolo">
                     </div>
@@ -83,7 +83,7 @@
         <div class="text-center">
             <?= $this->element('cta', [
                 'label' => 'Carica altri articoli',
-                'extraClass' => 'cta--primary'
+                'extraClass' => 'cta--primary fadeFromBottom-20'
             ]); ?>
         </div>
     </div>

@@ -155,6 +155,29 @@
 
 
 
+@keyframes fadeFromBottom-80 {
+  0%{
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeFromBottom-80{
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.fadeFromBottom-80.is-in{
+  animation: fadeFromBottom-80 0.5s ease-in-out forwards;
+}
+
+
+
+
 @keyframes fadeFromLeft-40 {
   0%{
     opacity: 0;
@@ -217,5 +240,29 @@
 
 .fadeFromBottom-about.is-in{
   animation: fadeFromBottom-about 1s ease-in-out forwards;
+}
+
+
+
+
+
+@keyframes rotateCard {
+  0%{
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  100%{
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+.rotateCard{
+  opacity: 0;
+  transform: rotateY(90deg);
+}
+
+.rotateCard.is-in{
+  animation: rotateCard 1s ease-in-out forwards;
 }
 

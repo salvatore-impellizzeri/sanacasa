@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer fadeFromBottom-20" data-animated>
     <div class="footer__container m-auto">
         <div class="footer__text">
             <p class="fw-light font-24">

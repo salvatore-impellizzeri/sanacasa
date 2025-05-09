@@ -34,7 +34,7 @@
                     ] 
                 ]) ?>
             </div>
-            <div class="faq-page__img">
+            <div class="faq-page__img fadeFromRight-40" data-animated>
                 <img src="img/img7.png" alt="Immagine FAQ">
             </div>
         </div>

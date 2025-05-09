@@ -12,18 +12,20 @@
                     [
                         'type' => "Regolarizzazione <br> catastale",
                         'price' => "299",
-                        'url' => '#'
+                        'url' => '#',
+                        'class' => 'fadeFromLeft-40'
                     ],
                     [
                         'type' => "Sanatoria <br> edilizia-urbanistica",
                         'price' => "899",
-                        'url' => '#'
+                        'url' => '#',
+                        'class' => 'fadeFromRight-40'
                     ]
                 ]
             ?>
             <div class="boxes">
                 <?php foreach ($prices as $price) { ?>
-                    <div class="box box--price">
+                    <div class="box box--price <?= $price['class'] ?>" data-animated>
                         <div class="box--price__upper">
                             <h2 class="font-48 fw-bold">
                                 <?= $price['type'] ?>
@@ -51,7 +53,7 @@
     </div>
 
     <!-- SPIEGAZIONE -->
-    <div class="box box--img m-auto mt-307 mb-150">
+    <div class="box box--img m-auto mt-307 mb-150 fadeFromBottom-20" data-animated>
         <div class="box--img__image">
             <div class="box--img__img-container">
                 <img src="img/img4.png" alt="">
@@ -123,7 +125,7 @@
         ?>
         <div class="card--flex mb-117">
             <?php foreach ($extras as $extra) { ?>
-                <div class="card card--extra">
+                <div class="card card--extra rotateCard" data-animated>
                     <h3>
                         <?= $extra['title'] ?>
                     </h3>
@@ -146,13 +148,13 @@
             <?= $this->element('cta', [
                 'label' => 'Dettaglio servizi',
                 'url' => '#',
-                'extraClass' => 'cta--secondary'
+                'extraClass' => 'cta--secondary fadeFromBottom-20'
             ]); ?>
         </div>
     </div>
     
     <!-- DETAILS PACKAGE -->
-    <div class="bg-secondary pt-168 pb-168">
+    <div class="bg-secondary pt-168 pb-168 fadeFromBottom-80" data-animated>
         <div class="container-details m-auto">
             <?= $this->element('title', [
                 'label' => 'dettaglio prezzi',
@@ -236,7 +238,7 @@
                     "Elaborazione e Presentazione della <strong>pratica edilizia di sanatoria</strong> (C.I.L.A. - S.C.I.A. - P.D.C.)",
                     "<strong>Variazione</strong> e <strong>aggiornamento</strong> Catastale (DOCFA)",
                 ],
-                'extraClass' => 'list-info--primary'
+                'extraClass' => 'list-info--primary fadeFromLeft-40'
             ]); ?>
             <?= $this->element('list-info', [
                 'title' => 'Aggiuntivi',
@@ -253,7 +255,7 @@
                     "<strong>Consulenza</strong> energetica e strutturale",
                     "Attestato di <strong>Presentazione Energetica</strong> (A.P.E.)"
                 ],
-                'extraClass' => 'list-info--secondary'
+                'extraClass' => 'list-info--secondary fadeFromRight-40'
             ]); ?>
         </div>
     </div>

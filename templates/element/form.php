@@ -1,5 +1,5 @@
 <div class="form pb-182 pt-182 bg-gradient-blue">
-    <div class="m-auto container-form font-20">
+    <div class="m-auto container-form font-20 fadeFromBottom-20" data-animated>
         <?= $this->element('title', [
             'label' => $label,
             'title' => $title,

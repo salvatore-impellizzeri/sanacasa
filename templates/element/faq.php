@@ -1,5 +1,5 @@
 <?php foreach ($faqs as $faq) { ?>
-    <div class="faq" data-accordion>
+    <div class="faq fadeFromLeft-40" data-accordion data-animated>
         <div class="faq__toggler" data-accordion-toggler>
             <h3 class="faq__title"><?= $faq['title'] ?></h3>
             <span class="faq__toggler__indicator"></span>

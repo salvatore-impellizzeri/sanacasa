@@ -1,4 +1,4 @@
-<div class="list-info <?= $extraClass ?? ''?>">
+<div class="list-info <?= $extraClass ?? ''?>" data-animated>
     <div class="list-info__upper font-chillax fw-semibold font-20">
         <?= $this->Frontend->svg($icon); ?> <?= $title ?>
     </div>
