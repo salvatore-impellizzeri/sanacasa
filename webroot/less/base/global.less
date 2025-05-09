@@ -96,6 +96,14 @@ video {
 
 .container-flex{
   display: flex;
+  overflow: hidden;
+
+  @media screen and (max-width: @tablet-m) {
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto;
+    gap: 50px !important;
+  }
 }
 
 .grid-cols-3{

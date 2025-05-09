@@ -69,6 +69,12 @@
     &--flex{
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: @tablet-l) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
     }
 
     &--extra{

@@ -2,7 +2,9 @@
     <div class="list-container__upper">
         <?php foreach ($labels as $label) { ?>
             <label class="font-chillax font-20 fw-semibold list-container__label mb-0 fadeFromBottom-20" data-animated>
-                <?= $this->Frontend->svg($label['icon']); ?>
+                <div class="list-container__svg">
+                    <?= $this->Frontend->svg($label['icon']); ?>
+                </div>
                 <span><?= $label['name'] ?></span>
             </label>
         <?php } ?>

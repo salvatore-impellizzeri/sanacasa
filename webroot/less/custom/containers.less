@@ -32,6 +32,10 @@
 
 .container-details{
     width: clamp(350px, 1145vw * @px2vw, 1145px);
+
+    @media screen and (max-width: @tablet-m) {
+        width: 90%;
+    }
 }
 
 .container-faq{
