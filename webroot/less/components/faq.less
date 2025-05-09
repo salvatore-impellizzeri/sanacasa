@@ -74,10 +74,14 @@
 
 .faq-page{
     &__img{
-        height: clamp(150px, 434vw * @px2vw, 434px);
+        height: clamp(250px, 434vw * @px2vw, 434px);
         width: 100%;
         .br-50;
         overflow: hidden;
+
+        @media screen and (max-width: @tablet-m) {
+            order: -1;
+        }
 
         img{
             filter: grayscale(100%);
@@ -90,5 +94,9 @@
     .container-faq{
         display: flex;
         gap: clamp(50px, 121vw * @px2vw, 121px);
+
+        @media screen and (max-width: @tablet-m) {
+            flex-wrap: wrap;
+        }
     }
 }
