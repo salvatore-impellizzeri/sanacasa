@@ -26,8 +26,9 @@
     }
 
     &__container{
-        width: clamp(350px, 1001vw * @px2vw, 1001px);
+        width: clamp(400px, 1001vw * @px2vw, 1001px);
         display: flex;
+        gap: clamp(15px, 98vw * @px2vw, 98px);
         justify-content: space-between;
 
         @media screen and (max-width: @tablet-m) {
@@ -52,7 +53,13 @@
 
 
     &__links{
-        width: clamp(130px, 203vw * @px2vw, 203px);
+        width: clamp(165px, 203vw * @px2vw, 203px);
+
+        @media screen and (max-width: @tablet-m) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
 
         .cta{
             color: @white;
@@ -67,6 +74,9 @@
 
         @media screen and (max-width: @tablet-m) {
             justify-content: flex-start;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
         }
     }
 
@@ -82,8 +92,14 @@
     }
 
     &__menu{
+        max-width: 140px;
         .font-20;
         margin-bottom: 1.3em;
+
+        @media screen and (max-width: @tablet-m) {
+            width: 100%;
+            max-width: auto;
+        }
     }
 
     &__img{

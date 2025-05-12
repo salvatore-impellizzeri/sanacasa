@@ -8,6 +8,7 @@
     .fw-bold;
     .font-19;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     @media screen and (max-width: @mobile-l) {
         height: 40px;
@@ -15,10 +16,18 @@
 
     &--primary{
         background: @cta-bg;
+
+        &:hover{
+            background: @cta-bg-secondary;
+        }
     }
 
     &--secondary{
         background: @cta-bg-secondary;
+
+        &:hover{
+            background: @cta-bg;
+        }
     }
 
     &--unique{
@@ -49,6 +58,11 @@
         .cta__label{
             display: flex;
             align-items: center;
+
+            svg{
+                width: fit-content;
+                height: 1.3em;
+            }
         }
     }
 

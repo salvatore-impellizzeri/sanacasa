@@ -14,6 +14,20 @@
     transition: 300ms @easeOutQuad;
     box-shadow: 4px 4px 30.3px rgba(86, 76, 255, 0.15);
 
+    &:hover{
+        background-color: rgba(255, 255, 255, 0.9);
+
+        .menu__item{
+            color: @text-primary;
+
+            &:hover{
+                .br-50;
+                background-color: @bg-primary;
+                color: @text-secondary;
+            }
+        }
+    }
+
 
     &__inner{
         width: clamp(900px, 1249vw * @px2vw, 1249px);
@@ -38,6 +52,7 @@
         
         .menu__item{
             color: @text-primary;
+            padding: 1em 0.89em;
         }
     }
 
@@ -76,7 +91,7 @@
 
     &__menu{
         padding-right: clamp(10px, 35vw * @px2vw, 35px);
-
+        width: fit-content;
         @media screen and (max-width: @tablet-l) {
             display: none;            
         }
