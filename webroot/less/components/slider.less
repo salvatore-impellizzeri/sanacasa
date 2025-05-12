@@ -93,9 +93,12 @@
 .swiper--methods{
     padding-left: clamp(20px, 96vw * @px2vw, 96px);
 
+    @media screen and (max-width: @tablet-l) {
+        padding-bottom: 80px !important;
+    }
+
     @media screen and (max-width: @mobile-l) {
         padding-left: 0;
-        padding-bottom: 80px !important;
     }
 }
 

@@ -14,8 +14,9 @@
     transition: 300ms @easeOutQuad;
     box-shadow: 4px 4px 30.3px rgba(86, 76, 255, 0.15);
 
+
     &__inner{
-        width: clamp(350px, 1249vw * @px2vw, 1249px);
+        width: clamp(900px, 1249vw * @px2vw, 1249px);
         height: 67px;
         margin: auto;
         display: flex;
@@ -82,13 +83,10 @@
     }
 
     &__hamburger{
-        margin-right: 20px;
-    }
+        margin-right: 40px;
 
-    &__hamburger-mobile{
-        display: none;
-        @media screen and (max-width: @tablet-l) {
-            display: block;
+        @media screen and (max-width: @tablet-s) {
+            margin-right: 0;
         }
     }
 

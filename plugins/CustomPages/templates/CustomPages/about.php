@@ -60,7 +60,7 @@
                 ],
             ]
         ?>
-        <div class="swiper swiper--methods pt-141 pb-118 fadeFromRight-40" data-animated>
+        <div class="swiper swiper--methods pt-141 pb-118 fadeFromBottom-20" data-animated>
             <div class="swiper-wrapper">
                 <?php foreach ($methods as $method) { ?>
                     <div class="swiper-slide">

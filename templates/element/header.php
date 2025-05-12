@@ -11,12 +11,6 @@ $languages = Configure::read('Setup.languages');
         <a href="<?= $homeLink ?>" class="header__logo">
             <?= $this->Frontend->svg('logo.svg') ?>
         </a>
-    
-        <?php if (!empty($showSearch)): ?>
-            <div class="header__search">
-                <?php echo $this->element('search'); ?>
-            </div>
-        <?php endif; ?>
         
         <nav class="header__menu">
             <?= $this->cell('Menu.Menu', [1]) ?>
@@ -24,13 +18,6 @@ $languages = Configure::read('Setup.languages');
         <div class="header__hamburger">
             <?php echo $this->element('hamburger'); ?>
         </div>
-    
-    
-        <?php if (!empty($languages)): ?>
-            <div class="header__languages">
-                <?= $this->element('languages'); ?>
-            </div>
-        <?php endif; ?>
     
         <?php if (!empty($cta)): ?>
             <div class="header__cta">
@@ -41,11 +28,6 @@ $languages = Configure::read('Setup.languages');
                 ]); ?>
             </div>
         <?php endif; ?>
-        
-        <?php if (empty($hamburgerMenu)): ?>
-            <div class="header__hamburger-mobile">
-                <?php echo $this->element('hamburger'); ?>
-            </div>
-        <?php endif; ?>
+
     </div>
 </header>
