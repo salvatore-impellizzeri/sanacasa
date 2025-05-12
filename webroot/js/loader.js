@@ -140,5 +140,14 @@ document.addEventListener("DOMContentLoaded", () => {
     stagger: 0.05,
     ease: "power2.out"  
   }, ">=0.5")
+  .to(iconPath, {
+    duration: 1,
+    ease: "power2.out",
+    rotation: -30,  
+    scale: 1.5,
+    x: ,
+    
+    transformOrigin: "50% 50%",
+  })
 });
 
