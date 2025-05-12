@@ -51,8 +51,9 @@
                 background-color: @indigo;
                 top: 50%;
                 left: 50%;
-                transform: translate3d(-50%, -50%, 0);
+                transform: translate3d(-50%, -50%, 0) scaleX(1);
                 -webkit-transform: translate3d(-50%, -50%, 0);
+                transition: transform .3s @easeOutQuad;
             }
         }
     }
@@ -62,14 +63,19 @@
         height: 0;
     }
     
-    &.open{
-        .page-faq__toggler__indicator{
-            &::after{
+    &.open {
+        .faq__toggler__indicator {
+            &::after {
                 transform: translate3d(-50%, 0, 0) rotate(-90deg);
                 -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg);
             }
+
+            &::before{
+                transform: translate3d(-50%, 0, 0) rotate(-90deg) scaleX(0);
+                -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg) scaleX(0);
+            }
         }
-    }
+    }    
 }
 
 .faq-page{

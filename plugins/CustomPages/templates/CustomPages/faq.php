@@ -42,7 +42,7 @@
             <?= $this->element('cta', [
                 'label' => "Vai alla form",
                 'url' => "#",
-                'extraClass' => "cta--primary"
+                'extraClass' => "cta--primary fadeFromBottom-20"
             ]); ?>
         </div>
     </div>

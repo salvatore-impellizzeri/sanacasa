@@ -131,3 +131,16 @@
         }
     }
 }
+
+.hidden-articles{
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &__wrapper{
+        display: grid;
+        grid-template-rows: 0fr;
+        width: 100%;
+        transition: all .5s ease-in-out;
+    }
+}
