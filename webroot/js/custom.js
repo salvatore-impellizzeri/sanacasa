@@ -303,21 +303,16 @@ const swiperMethods = new Swiper('.swiper--methods', {
 
 // MORE NEWS
 
-const buttonNews = document.querySelectorAll('.more-news');
-const news = document.querySelectorAll('.hidden-articles__wrapper');
+const buttonNews = document.querySelector('.more-news'); 
+const news = document.querySelector('.hidden-articles'); 
 
-buttonNews.forEach((button, index) => {
-	button.addEventListener('click', function () {
-		if(!button.classList.contains('active')) {
-			button.classList.add('active');
-			button.innerHTML = 'Mostra meno articoli';
-			news[index].style.gridTemplateRows = '1fr';
-			news[index].classList.add('pt-62');
-		} else {
-			button.classList.remove('active');
-			button.innerHTML = 'Carica altri articoli';
-			news[index].style.gridTemplateRows = '0fr';
-			news[index].classList.remove('pt-62');
-		}
-	});
+buttonNews.addEventListener('click', function () {
+	if (!buttonNews.classList.contains('active')) {
+		buttonNews.classList.add('active');
+		buttonNews.innerHTML = 'Mostra meno articoli';
+	} else {
+		buttonNews.classList.remove('active');
+		buttonNews.innerHTML = 'Carica altri articoli';
+	}
 });
+
