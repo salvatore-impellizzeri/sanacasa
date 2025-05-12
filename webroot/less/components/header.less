@@ -21,7 +21,6 @@
             color: @text-primary;
 
             &:hover{
-                .br-50;
                 background-color: @bg-primary;
                 color: @text-secondary;
             }
@@ -52,7 +51,6 @@
         
         .menu__item{
             color: @text-primary;
-            padding: 1em 0.89em;
         }
     }
 
@@ -121,7 +119,7 @@
     .menu{
         display: flex;
         align-items: center;
-        gap: clamp(15px, 33.48vw * @px2vw, 33.48px);
+        gap: clamp(5px, 11vw * @px2vw, 11px);
 
         .current-page{
             .br-50;
@@ -133,10 +131,13 @@
         
         &__item{
             position: relative;
+            padding: 1em 0.89em;
             .font-19;
+            .br-50;
             color: @text-primary;
             min-width: 67px;
             text-align: center;
+            transition: all 0.3s ease-in-out;
 
             &:hover{
                 .menu__submenu{
@@ -211,6 +212,7 @@
 
     .menu__item{
         color: @white;
+        align-self: center;
     }
 
     .body--light-header:not(.body--scroll) &{

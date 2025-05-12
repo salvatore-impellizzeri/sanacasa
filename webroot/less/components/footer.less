@@ -14,6 +14,7 @@
         @media screen and (max-width: @tablet-m) {
             width: 100%;
             margin-bottom: 5em;
+            margin: auto;
         }
 
         p{
@@ -26,13 +27,14 @@
     }
 
     &__container{
-        width: clamp(400px, 1001vw * @px2vw, 1001px);
+        width: clamp(350px, 1001vw * @px2vw, 1001px);
         display: flex;
-        gap: clamp(15px, 98vw * @px2vw, 98px);
+        gap: clamp(10px, 98vw * @px2vw, 98px);
         justify-content: space-between;
 
         @media screen and (max-width: @tablet-m) {
             flex-direction: column;
+            gap: 40px;
         }
     }
 
@@ -57,8 +59,6 @@
 
         @media screen and (max-width: @tablet-m) {
             width: 100%;
-            display: flex;
-            align-items: center;
         }
 
         .cta{
@@ -92,7 +92,6 @@
     }
 
     &__menu{
-        max-width: 140px;
         .font-20;
         margin-bottom: 1.3em;
 
