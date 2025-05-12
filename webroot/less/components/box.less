@@ -7,17 +7,18 @@
     display: flex;
     align-items: center;
 
-    @media screen and(max-width: @tablet-m) {
-        width: 75%;
-    }
-
-    @media screen and (max-width: @tablet-s) {
-        width: 100%;
+    @media screen and(max-width: @mobile-l) {
+        width: 90%;
+        margin: auto;
     }
 
     &__text{
-        width: clamp(150px, 387vw * @px2vw, 387px);
+        width: clamp(230px, 387vw * @px2vw, 387px);
         color: @light-text-color;
+
+        @media screen and (max-width: @tablet-l) {
+            width: 100%;
+        }
 
         h3{
             width: clamp(102px, 302vw * @px2vw, 302px);
@@ -36,6 +37,10 @@
         position: absolute;
         right: 0;
         bottom: 0;
+
+        @media screen and (max-width: @tablet-l) {
+            display: none;
+        }
 
         img{
             object-fit: contain;

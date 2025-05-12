@@ -22,7 +22,7 @@
                 'label' => 'il nostro metodo',
                 'title' => 'Crediamo che il primo passo per la riqualifica del patrimonio immobiliare italiano, sia la sua legittimazione. ',
                 'text' => "Ti diamo gli strumenti per raggiungere la conformità del tuo immobile. ",
-                'extraClass' => "title--white text-center mb-143",
+                'extraClass' => "title--white text-center",
             ]); ?>
         </div>
 
@@ -60,7 +60,7 @@
                 ],
             ]
         ?>
-        <div class="swiper--methods fadeFromRight-40" data-animated>
+        <div class="swiper swiper--methods pt-141 pb-118 fadeFromRight-40" data-animated>
             <div class="swiper-wrapper">
                 <?php foreach ($methods as $method) { ?>
                     <div class="swiper-slide">
@@ -74,8 +74,12 @@
                 <?php } ?>
             </div>
 
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev button-down">
+                <?= $this->Frontend->svg('icons/arrow-left.svg'); ?>
+            </div>
+            <div class="swiper-button-next button-down">
+                <?= $this->Frontend->svg('icons/arrow-right.svg'); ?>
+            </div>
         </div>
     </div>
 

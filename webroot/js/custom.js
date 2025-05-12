@@ -291,20 +291,44 @@ requestAnimationFrame(raf);
 // SWIPER METHODS
 
 const swiperMethods = new Swiper('.swiper--methods', {
-	loop: true,
-	slidesPerView: 2.2,
-	spaceBetween: 40,
+	slidesPerView: 1,
+	spaceBetween: 67,
 
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},	
+
+	breakpoints: {
+		2600: {
+			slidesPerView: 2.8,
+		},
+
+		2200: {
+			slidesPerView: 2.4,
+		},
+
+		1400: {
+			slidesPerView: 2.1,
+		},
+
+		1000: {
+			slidesPerView: 1.9,
+		},
+
+		800: {
+			slidesPerView: 1.7,
+		},
+
+		551: {
+			slidesPerView: 1.4,
+		},
+	}
 });
 
 // MORE NEWS
 
 const buttonNews = document.querySelector('.more-news'); 
-const news = document.querySelector('.hidden-articles'); 
 
 buttonNews.addEventListener('click', function () {
 	if (!buttonNews.classList.contains('active')) {

@@ -1,4 +1,4 @@
-<div class="box box bg-purple">
+<div class="box bg-purple">
     <div class="box__text">
         <div class="box__num font-64 fw-semibold font-chillax">
             <?= $num ?>

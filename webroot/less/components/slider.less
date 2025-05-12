@@ -92,4 +92,37 @@
 
 .swiper--methods{
     padding-left: clamp(20px, 96vw * @px2vw, 96px);
+
+    @media screen and (max-width: @mobile-l) {
+        padding-left: 0;
+        padding-bottom: 80px !important;
+    }
 }
+
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: @swiper-button-bg;
+    width: clamp(40px, 62vw * @px2vw, 62px);
+    height: clamp(40px, 62vw * @px2vw, 62px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: clamp(20px, 74vw * @px2vw, 74px);
+    margin-right: clamp(20px, 74vw * @px2vw, 74px);
+
+    svg{
+        width: clamp(20px, 32vw * @px2vw, 32px);
+    }
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    display: none;
+}
+
+.button-down{
+    top: 100%;
+    transform: translateY(-75%);
+}
+
