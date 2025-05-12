@@ -3,7 +3,7 @@
 ?>
 
 <div class="home">
-
+    <?= $this->element('loader'); ?>
     <!-- HERO -->
     <div class="home__hero">
         <video src="img/video/home-video.mp4" autoplay loop muted playsinline></video>

@@ -244,8 +244,6 @@
 
 
 
-
-
 @keyframes rotateCard {
   0%{
     opacity: 0;
@@ -264,5 +262,22 @@
 
 .rotateCard.is-in{
   animation: rotateCard 1s ease-in-out forwards;
+}
+
+
+
+
+@keyframes loader-letterIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.loader-letterIn{
+  opacity: 0;
+  animation: loader-letterIn 1s ease-in-out forwards;
 }
 
