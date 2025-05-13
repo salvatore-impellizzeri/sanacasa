@@ -157,10 +157,10 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 0,
     onComplete: () => {
       document.querySelector(".loader").style.visibility = "hidden";
+      lenis.start();
     }
   }, ">=1")
-  .call(() => {
-    lenis.start();
-  });
+  console.log(xFinal);
 });
+
 

@@ -1,6 +1,6 @@
 <?php
-    $animationText = (isset($extraClass) && $extraClass === 'invert') ? 'fadeFromRight-40' : 'fadeFromLeft-40';
-    $animationImg = (isset($extraClass) && $extraClass === 'invert') ? 'fadeFromLeft-40' : 'fadeFromRight-40';
+    $animationText = (isset($extraClass) && str_contains($extraClass, 'invert')) ? 'fadeFromRight-40' : 'fadeFromLeft-40';
+    $animationImg = (isset($extraClass) && str_contains($extraClass, 'invert')) ? 'fadeFromLeft-40' : 'fadeFromRight-40';
 ?>
 
 <div class="img-text <?= $extraClass ?? ''?>">

@@ -125,7 +125,10 @@
 .boxes{
     display: flex;
     gap: clamp(20px, 53vw * @px2vw, 53px);
-    overflow: hidden;
+    
+    @media screen and (max-width: @mobile-l) {
+        overflow: hidden;
+    }
 
     @media screen and (max-width: @tablet-m) {
         flex-wrap: wrap;

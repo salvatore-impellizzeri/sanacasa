@@ -96,7 +96,10 @@ video {
 
 .container-flex{
   display: flex;
-  overflow: hidden;
+  
+  @media screen and (max-width: @mobile-l) {
+      overflow: hidden;
+  }
 
   @media screen and (max-width: @tablet-m) {
     flex-wrap: wrap;
