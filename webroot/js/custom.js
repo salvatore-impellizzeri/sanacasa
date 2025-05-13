@@ -329,3 +329,58 @@ if(buttonNews) {
 		}
 	});
 }	
+
+// BLOCCO SCHERMATA E ANIMAZIONI LOADER
+
+document.addEventListener("DOMContentLoaded", () => {
+  const svg = document.querySelector("#Sanacasa_Logo");
+  const letters = svg.querySelectorAll("path");
+  const letters2 = svg.querySelectorAll(".letter");
+
+  const iconPath = document.querySelector("#Icona");
+  const boundIcon = iconPath.getBoundingClientRect();
+//   const scaleIcon = 1.5;
+//   const halfScreen = window.innerWidth / 2;
+//   const iconWidth = boundIcon.width * scaleIcon;
+//   const iconWidthOriginal = boundIcon.width;
+//   const variationScale = (iconWidth - iconWidthOriginal) / 2;
+//   const iconLeftOriginal = boundIcon.left;
+//   const iconLeft = iconLeftOriginal - variationScale;
+//   const xFinal = halfScreen - iconLeft - (iconWidth / 2);
+
+	console.log("Metà schermo: " + halfScreen);
+	console.log("metà box con scale: " + (iconWidth / 2));
+	console.log("Distanza da sinistra: " + iconLeft);
+	console.log("Risultato: " + xFinal);
+
+  let tl = gsap.timeline()
+  .to(letters, {
+    duration: 1,
+    opacity: 1,
+    stagger: 0.05,  
+    ease: "power2.out"  
+  })
+  .to(letters2, {
+    duration: 1,
+    opacity: 0,
+    stagger: 0.05,
+    ease: "power2.out"  
+  }, ">=0.5")
+  .to(iconPath, {
+    duration: 1,
+    ease: "power2.out",
+	scale: scaleIcon,
+	x: 184.80001831054688, //xFinal
+    transformOrigin: "50% 50%",
+  })
+  .to(".loader", {
+    duration: 1,
+    ease: "power2.out",
+    opacity: 0,
+    onComplete: () => {
+      document.querySelector(".loader").style.visibility = "hidden";
+      lenis.start();
+    }
+  }, ">=1")
+});
+

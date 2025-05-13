@@ -119,48 +119,4 @@ window.addEventListener("load", (event) => {
   }
 });
 
-// BLOCCO SCHERMATA
-document.addEventListener("DOMContentLoaded", () => {
-  const svg = document.querySelector("#Sanacasa_Logo");
-  const letters = svg.querySelectorAll("path");
-  const letters2 = svg.querySelectorAll(".letter");
-
-  const iconPath = document.querySelector("#Icona");
-  const boundIcon = iconPath.getBoundingClientRect();
-
-  const halfScreen = window.innerWidth / 2;
-  const xFinal = halfScreen - boundIcon.left - boundIcon.width;
-
-  let tl = gsap.timeline()
-  .to(letters, {
-    duration: 1,
-    opacity: 1,
-    stagger: 0.05,  
-    ease: "power2.out"  
-  })
-  .to(letters2, {
-    duration: 1,
-    opacity: 0,
-    stagger: 0.05,
-    ease: "power2.out"  
-  }, ">=0.5")
-  .to(iconPath, {
-    duration: 1,
-    x: xFinal,
-    ease: "power2.out",
-    scale: 1.5,
-    transformOrigin: "50% 50%",
-  })
-  .to(".loader", {
-    duration: 1,
-    ease: "power2.out",
-    opacity: 0,
-    onComplete: () => {
-      document.querySelector(".loader").style.visibility = "hidden";
-      lenis.start();
-    }
-  }, ">=1")
-  console.log(xFinal);
-});
-
 
