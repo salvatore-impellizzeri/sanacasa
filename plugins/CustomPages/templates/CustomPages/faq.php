@@ -3,7 +3,7 @@
         <?= $this->element("title", [
             "label" => "FAQ",
             "title" => "Domande frequenti",
-            "extraClass" => "title--primary text-center mb-105",
+            "extraClass" => "title--secondary text-center mb-105",
         ]); ?>
     </div>
     <div class="pb-100">

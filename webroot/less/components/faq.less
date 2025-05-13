@@ -18,7 +18,7 @@
         padding-top: 1.08em;
         .font-24-secondary;
         gap: 10px;
-
+        transition: all .3s @easeOutQuad;
 
         @media screen and (max-width: @tablet-s) {
             padding: 15px 0;
@@ -40,7 +40,7 @@
                 left: 50%;
                 transform: translate3d(-50%, 0, 0);
                 -webkit-transform: translate3d(-50%, 0, 0);
-                transition: transform .3s @easeOutQuad;
+                transition: all .3s @easeOutQuad;
             }
 
             &::before{
@@ -51,9 +51,9 @@
                 background-color: @indigo;
                 top: 50%;
                 left: 50%;
-                transform: translate3d(-50%, -50%, 0) scaleX(1);
+                transform: translate3d(-50%, -50%, 0);
                 -webkit-transform: translate3d(-50%, -50%, 0);
-                transition: transform .3s @easeOutQuad;
+                transition: all .3s @easeOutQuad;
             }
         }
     }
@@ -64,17 +64,22 @@
     }
     
     &.open {
-        .faq__toggler__indicator {
-            &::after {
-                transform: translate3d(-50%, 0, 0) rotate(-90deg);
-                -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg);
-            }
+        .faq__toggler{
+            color: @text-secondary;
 
-            &::before{
-                transform: translate3d(-50%, 0, 0) rotate(-90deg) scaleX(0);
-                -webkit-transform: translate3d(-50%, 0, 0) rotate(-90deg) scaleX(0);
+            &__indicator {
+                &::after {
+                    transform: translate3d(-50%, 0, 0) rotate(-45deg);
+                    -webkit-transform: translate3d(-50%, 0, 0) rotate(-45deg);
+                }
+    
+                &::before{
+                    transform: translate3d(-50%, 0, 0) rotate(-45deg);
+                    -webkit-transform: translate3d(-50%, 0, 0) rotate(-45deg);
+                }
             }
         }
+
     }    
 }
 
