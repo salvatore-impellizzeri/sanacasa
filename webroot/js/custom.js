@@ -147,25 +147,6 @@ $(function () {
 		});
 	});
 
-
-	// Fancybox setup
-	Fancybox.bind("[data-fancybox]", {
-        Thumbs: false,
-        Toolbar: {
-			display: 'none'
-		},
-	});
-
-	Fancybox.bind("[data-fancybox-iframe]", {
-		closeButton: 'inside',
-		preload: false,
-        defaultType: 'iframe',
-		Toolbar: {
-			display: 'none'
-		},
-
-	});
-
     //swiper
     $('[data-slider]').each(function(i, wrapper){
         let swiper = new Swiper($('.swiper', wrapper).get(0), {
@@ -281,6 +262,8 @@ $(function () {
 
 const lenis = new Lenis();
 
+lenis.stop();
+
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
@@ -330,13 +313,14 @@ const swiperMethods = new Swiper('.swiper--methods', {
 
 const buttonNews = document.querySelector('.more-news'); 
 
-buttonNews.addEventListener('click', function () {
-	if (!buttonNews.classList.contains('active')) {
-		buttonNews.classList.add('active');
-		buttonNews.innerHTML = 'Mostra meno articoli';
-	} else {
-		buttonNews.classList.remove('active');
-		buttonNews.innerHTML = 'Carica altri articoli';
-	}
-});
-
+if(buttonNews) {
+	buttonNews.addEventListener('click', function () {
+		if (!buttonNews.classList.contains('active')) {
+			buttonNews.classList.add('active');
+			buttonNews.innerHTML = 'Mostra meno articoli';
+		} else {
+			buttonNews.classList.remove('active');
+			buttonNews.innerHTML = 'Carica altri articoli';
+		}
+	});
+}	

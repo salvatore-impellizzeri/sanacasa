@@ -126,6 +126,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const letters2 = svg.querySelectorAll(".letter");
 
   const iconPath = document.querySelector("#Icona");
+  const boundIcon = iconPath.getBoundingClientRect();
+
+  const halfScreen = window.innerWidth / 2;
+  const xFinal = halfScreen - boundIcon.left - boundIcon.width;
 
   let tl = gsap.timeline()
   .to(letters, {
@@ -142,12 +146,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }, ">=0.5")
   .to(iconPath, {
     duration: 1,
+    x: xFinal,
     ease: "power2.out",
-    rotation: -30,  
     scale: 1.5,
-    x: ,
-    
     transformOrigin: "50% 50%",
   })
+  .to(".loader", {
+    duration: 1,
+    ease: "power2.out",
+    opacity: 0,
+    onComplete: () => {
+      document.querySelector(".loader").style.visibility = "hidden";
+    }
+  }, ">=1")
+  .call(() => {
+    lenis.start();
+  });
 });
 
