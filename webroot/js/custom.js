@@ -339,14 +339,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const iconPath = document.querySelector("#Icona");
   const boundIcon = iconPath.getBoundingClientRect();
-//   const scaleIcon = 1.5;
-//   const halfScreen = window.innerWidth / 2;
-//   const iconWidth = boundIcon.width * scaleIcon;
-//   const iconWidthOriginal = boundIcon.width;
-//   const variationScale = (iconWidth - iconWidthOriginal) / 2;
-//   const iconLeftOriginal = boundIcon.left;
-//   const iconLeft = iconLeftOriginal - variationScale;
-//   const xFinal = halfScreen - iconLeft - (iconWidth / 2);
+  const scaleIcon = 1.5;
+  const halfScreen = window.innerWidth / 2;
+  const iconWidth = boundIcon.width * scaleIcon;
+  const iconWidthOriginal = boundIcon.width;
+  const variationScale = (iconWidth - iconWidthOriginal) / 2;
+  const iconLeftOriginal = boundIcon.left;
+  const iconLeft = iconLeftOriginal - variationScale;
+  const xFinal = halfScreen - iconLeft - (iconWidth / 2);
 
 	console.log("Metà schermo: " + halfScreen);
 	console.log("metà box con scale: " + (iconWidth / 2));
@@ -370,7 +370,7 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1,
     ease: "power2.out",
 	scale: scaleIcon,
-	x: 184.80001831054688, //xFinal
+	x: 184.80001831054688,
     transformOrigin: "50% 50%",
   })
   .to(".loader", {
