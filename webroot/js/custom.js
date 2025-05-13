@@ -262,7 +262,12 @@ $(function () {
 
 const lenis = new Lenis();
 
-lenis.stop();
+
+const loader = document.querySelector(".loader");
+
+if (loader) {
+  lenis.stop();
+}
 
 function raf(time) {
   lenis.raf(time);

@@ -155,9 +155,9 @@
                 ]
             ]
         ?>
-        <div class="container-cards m-auto">
+        <div class="container-cards m-auto swiper swiper--reviews">
             <?php foreach ($ratings as $rating) { ?>
-               <div class="card card--white rotateCard" data-animated>
+                <div class="card card--white rotateCard" data-animated>
                     <div class="card__rating">
                         <?php for ($i = 0; $i < $rating['rating']; $i++) { ?>
                             <?= $this->Frontend->svg('icons/star.svg'); ?>
@@ -172,7 +172,7 @@
                     <div class="font-chillax card__name fw-semibold font-20">
                         <?= $rating['name'] ?>
                     </div>
-               </div>
+                </div>
             <?php } ?>
         </div>
     </div>

@@ -11863,3 +11863,640 @@ Stack Trace:
 - [main]:
 
 Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:31:04 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:31:13 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:31:41 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:33:31 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:33:36 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:33:46 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:34:06 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:34:38 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:34:45 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:34:50 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:36:51 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:42:37 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:42:41 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:42:49 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:43:13 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:44:36 error: [Cake\Http\Exception\NotFoundException] expected color value: failed at `";` /Applications/MAMP/htdocs/sanacasa/webroot/less/main.less on line 101 in /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php on line 82
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/main.css
+Referer URL: http://localhost:8888/news-5
+2025-05-13 10:44:36 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map
+2025-05-13 10:44:50 error: [Cake\Http\Exception\NotFoundException] expected color value: failed at `";` /Applications/MAMP/htdocs/sanacasa/webroot/less/main.less on line 101 in /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php on line 82
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/main.css
+Referer URL: http://localhost:8888/news-5
+2025-05-13 10:44:53 error: [Cake\Http\Exception\NotFoundException] expected color value: failed at `";` /Applications/MAMP/htdocs/sanacasa/webroot/less/main.less on line 101 in /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php on line 82
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/main.css
+Referer URL: http://localhost:8888/news-5
+2025-05-13 10:48:17 error: [Cake\Http\Exception\MissingControllerException] Controller class `Cache_assets` could not be found. in /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 308
+Exception Attributes: array (
+  'controller' => 'Cache_assets',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/BaseApplication.php:330
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/authentication/src/Middleware/AuthenticationMiddleware.php:87
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:169
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:118
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:78
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/src/Middleware/CachedAssetMiddleware.php:50
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/markstory/asset_compress/src/Middleware/AssetCompressMiddleware.php:64
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:115
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /Applications/MAMP/htdocs/sanacasa/vendor/cakephp/cakephp/src/Http/Server.php:105
+- /Applications/MAMP/htdocs/sanacasa/webroot/index.php:44
+- [main]:
+
+Request URL: /cache_assets/swiper-bundle.min.js.map

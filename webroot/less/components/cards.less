@@ -1,9 +1,10 @@
 .card{
     .br-50;
     padding: clamp(20px, 83vw * @px2vw, 83px) clamp(15px, 57vw * @px2vw, 57px);
-    .bg-primary;
+    background-color: @bg-primary;
     text-align: center;
     width: 100%;
+    transition: all 0.3s ease-in-out;
 
     &__icon{
         width: clamp(40px, 90vw * @px2vw, 90px);
@@ -99,6 +100,19 @@
         padding: 0;
         overflow: hidden;
         text-align: left;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            background-color: #c9c5ff;
+
+            img{
+                filter: brightness(80%);
+            }
+
+            h3{
+                color: @text-primary;
+            }
+        }
 
         &__date{
             margin-bottom: 1.15em;
@@ -108,6 +122,10 @@
 
         &__img{
             position: relative;
+
+            img{
+                transition: all 0.3s ease-in-out;
+            }
 
             &::after{
                 content: '';
@@ -128,6 +146,7 @@
 
         h3{
             margin-bottom: 0;
+            transition: all 0.3s ease-in-out;
         }
     }
 }
